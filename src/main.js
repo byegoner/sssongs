@@ -122,7 +122,7 @@ function renderResults() {
   gameContainer.innerHTML = `
     <div class="results">
       <h2>Final Rankings</h2>
-      <div class="rankings">
+      <div class="rankings" id="rankings-container">
         ${rankings.slice(0, 10).map(song => `
           <div class="ranking-item">
             <span class="rank">#${song.rank}</span>
@@ -130,7 +130,10 @@ function renderResults() {
           </div>
         `).join('')}
       </div>
-      <button onclick="restart()">Start Over</button>
+      <div class="results-buttons">
+        <button onclick="shareRanking()" class="share-button">📱 Share My Ranking</button>
+        <button onclick="restart()">🔄 Start Over</button>
+      </div>
     </div>
   `;
 }
@@ -161,6 +164,104 @@ window.selectSong = function(songId) {
   sorter.currentRound++;
   renderRound();
 };
+
+window.shareRanking = async function() {
+  const shareButton = document.querySelector('.share-button');
+  shareButton.disabled = true;
+  shareButton.textContent = '📸 Generating...';
+
+  try {
+    // Create a shareable version of the rankings
+    const rankingsContainer = document.getElementById('rankings-container');
+
+    // Create a container for the share image
+    const shareContainer = document.createElement('div');
+    shareContainer.style.position = 'absolute';
+    shareContainer.style.left = '-9999px';
+    shareContainer.style.top = '-9999px';
+    shareContainer.style.width = '600px';
+    shareContainer.style.backgroundColor = '#1a1a2e';
+    shareContainer.style.padding = '2rem';
+    shareContainer.style.borderRadius = '15px';
+    shareContainer.style.fontFamily = 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+
+    // Add title and rankings
+    shareContainer.innerHTML = `
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <h2 style="background: linear-gradient(135deg, #ff6b9d, #c471ed, #12c2e9); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 2rem; margin: 0; font-weight: 800;">my tripleS ranking</h2>
+      </div>
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 2rem; backdrop-filter: blur(10px);">
+        ${rankingsContainer.innerHTML}
+      </div>
+      <div style="text-align: center; margin-top: 1.5rem; color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+        @ sssorter.pages.dev/songs
+      </div>
+    `;
+
+    document.body.appendChild(shareContainer);
+
+    // Generate the image
+    const canvas = await html2canvas(shareContainer, {
+      backgroundColor: '#1a1a2e',
+      scale: 2, // Higher quality
+      useCORS: true,
+      logging: false
+    });
+
+    // Clean up
+    document.body.removeChild(shareContainer);
+
+    // Convert to blob
+    canvas.toBlob(async (blob) => {
+      const shareText = 'my #tripleS song ranking @ https://sssorter.pages.dev/songs';
+
+      // Try Web Share API first (mobile)
+      if (navigator.share && navigator.canShare && navigator.canShare({ files: [new File([blob], 'ranking.png', { type: 'image/png' })] })) {
+        try {
+          await navigator.share({
+            title: 'My tripleS Song Ranking',
+            text: shareText,
+            files: [new File([blob], 'triples-ranking.png', { type: 'image/png' })]
+          });
+        } catch (error) {
+          if (error.name !== 'AbortError') {
+            fallbackShare(blob, shareText);
+          }
+        }
+      } else {
+        // Fallback for desktop
+        fallbackShare(blob, shareText);
+      }
+    }, 'image/png');
+
+  } catch (error) {
+    console.error('Error generating share image:', error);
+    alert('Sorry, there was an error generating the share image. Please try again.');
+  } finally {
+    shareButton.disabled = false;
+    shareButton.textContent = '📱 Share My Ranking';
+  }
+};
+
+function fallbackShare(blob, text) {
+  // Create download link
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'my-triples-ranking.png';
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+
+  // Copy text to clipboard
+  navigator.clipboard.writeText(text).then(() => {
+    alert('🎉 Ranking image downloaded!\n📋 Caption copied to clipboard:\n\n' + text);
+  }).catch(() => {
+    alert('🎉 Ranking image downloaded!\n\nShare with this caption:\n' + text);
+  });
+}
 
 window.restart = function() {
   preloadedEmbeds.clear();

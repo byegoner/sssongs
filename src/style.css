@@ -519,6 +519,7 @@ h1::after {
 
 .results {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .rankings {
@@ -528,6 +529,38 @@ h1::after {
   border-radius: 15px;
   padding: 2rem;
   backdrop-filter: blur(10px);
+}
+
+.results-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.share-button {
+  background: linear-gradient(45deg, #ff6b9d, #c471ed);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.share-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
+}
+
+.share-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .ranking-item {
