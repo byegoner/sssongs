@@ -1,7 +1,7 @@
 import triplesData from "./data/triples-songs.json" assert { type: "json" };
 
 export class SongSorter {
-  constructor(songs, totalRounds = 35) {
+  constructor(songs, totalRounds = 70) {
     this.songs = songs.map((song) => ({
       ...song,
       rating: 1200,
@@ -12,7 +12,25 @@ export class SongSorter {
     this.history = [];
   }
 
-  calculateElo(winnerRating, loserRating, kFactor = 32) {
+  // Progressive K-factor: starts conservative, gets more punchy in later phases
+  getKFactor() {
+    if (this.currentRound >= 60) {
+      // Phase 4: Final Showdown - Very punchy (K=48)
+      return 48;
+    } else if (this.currentRound >= 50) {
+      // Phase 3: Precision Ranking - Punchy (K=40)
+      return 40;
+    } else if (this.currentRound >= 30) {
+      // Phase 2: Contenders - Moderate (K=32)
+      return 32;
+    } else {
+      // Phase 1: Discovery - Conservative (K=24)
+      return 24;
+    }
+  }
+
+  calculateElo(winnerRating, loserRating) {
+    const kFactor = this.getKFactor();
     const expectedWin =
       1 / (1 + Math.pow(10, (loserRating - winnerRating) / 400));
     const newWinnerRating = winnerRating + kFactor * (1 - expectedWin);
@@ -30,29 +48,29 @@ export class SongSorter {
     let availableSongs = [...this.songs];
     let phaseMessage = "";
 
-    if (this.currentRound >= 50) {
-      // Phase 4: Final Showdown (top 25%)
+    if (this.currentRound >= 60) {
+      // Phase 4: Final Showdown (top 25%) - rounds 61-70
       const sortedSongs = [...this.songs].sort((a, b) => b.rating - a.rating);
       const topCount = Math.floor(this.songs.length * 0.25);
       availableSongs = sortedSongs.slice(0, Math.max(topCount, 3)); // Ensure at least 3 songs
       phaseMessage = "🏆 Final Showdown - Elite competition";
-    } else if (progress >= 0.58) {
-      // Phase 3: Precision Ranking (top 50%)
+    } else if (this.currentRound >= 50) {
+      // Phase 3: Precision Ranking (top 50%) - rounds 51-60
       const sortedSongs = [...this.songs].sort((a, b) => b.rating - a.rating);
       const topCount = Math.floor(this.songs.length * 0.5);
       availableSongs = sortedSongs.slice(0, Math.max(topCount, 3)); // Ensure at least 3 songs
       phaseMessage = "🎯 Focusing on top contenders";
-    } else if (progress >= 0.33) {
-      // Phase 2: Focus on Contenders (top 75%)
+    } else if (this.currentRound >= 30) {
+      // Phase 2: Focus on Contenders (top 75%) - rounds 31-50
       const sortedSongs = [...this.songs].sort((a, b) => b.rating - a.rating);
       const topCount = Math.floor(this.songs.length * 0.75);
       availableSongs = sortedSongs.slice(0, Math.max(topCount, 3)); // Ensure at least 3 songs
       phaseMessage = "🎵 Focusing on promising songs";
     }
-    // Phase 1: Full Discovery (0-40%) - use all songs, no message needed
+    // Phase 1: Full Discovery (rounds 1-30) - prioritize unshown
 
     // Add safety net for songs that haven't appeared recently (but not in final showdown)
-    if (this.currentRound < 50) {
+    if (this.currentRound < 60) {
       const neglectedSongs = this.songs.filter((song) => {
         const lastAppearance = this.getLastAppearance(song.id);
         return lastAppearance === -1 || this.currentRound - lastAppearance > 10;
@@ -71,13 +89,42 @@ export class SongSorter {
       }
     }
 
-    // Calculate weights based on inverse appearances
+    // PHASE 1 SPECIAL LOGIC: Prioritize unshown songs in first 30 rounds
+    if (this.currentRound < 30) {
+      const unshownSongs = this.songs.filter(song => song.appearances === 0);
+
+      if (unshownSongs.length >= 3) {
+        // If we have 3+ unshown songs, strongly prioritize them
+        const weights = unshownSongs.map(() => 10); // High weight for unshown songs
+        return this.weightedSelection(unshownSongs, weights, 3);
+      } else if (unshownSongs.length > 0) {
+        // Mix unshown songs with lightly shown songs
+        const lightlyShownSongs = this.songs.filter(song => song.appearances <= 2);
+        const combinedSongs = [...unshownSongs, ...lightlyShownSongs];
+        const weights = combinedSongs.map(song =>
+          song.appearances === 0 ? 10 : (3 - song.appearances) // Unshown=10, 1 appearance=2, 2 appearances=1
+        );
+        return this.weightedSelection(combinedSongs, weights, 3);
+      }
+    }
+
+    // Calculate weights based on inverse appearances (normal logic for other phases)
     const weights = availableSongs.map((song) => 1 / (song.appearances + 1));
 
+    // Store phase message for UI display
+    if (phaseMessage) {
+      this.currentPhaseMessage = phaseMessage;
+    }
+
+    return this.weightedSelection(availableSongs, weights, 3);
+  }
+
+  // Extract weighted selection logic into reusable method
+  weightedSelection(availableSongs, weights, count) {
     const selected = [];
     const selectablePool = [...availableSongs];
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < count; i++) {
       const availableWeights = selectablePool.map((song) => {
         const originalIndex = availableSongs.indexOf(song);
         return weights[originalIndex];
@@ -106,11 +153,6 @@ export class SongSorter {
       if (selectablePool.length === 0) break; // No more songs to select
     }
 
-    // Store phase message for UI display
-    if (phaseMessage && selected.length === 3) {
-      this.currentPhaseMessage = phaseMessage;
-    }
-
     return selected;
   }
 
@@ -135,17 +177,17 @@ export class SongSorter {
     // Custom round display logic
     let roundDisplay, totalDisplay, progress;
 
-    if (this.currentRound >= 50) {
-      // Final Showdown rounds (51-60)
-      const finalRoundNumber = this.currentRound - 49; // 1-10 for rounds 51-60
+    if (this.currentRound >= 60) {
+      // Final Showdown rounds (61-70)
+      const finalRoundNumber = this.currentRound - 59; // 1-10 for rounds 61-70
       roundDisplay = `Final Showdown ${finalRoundNumber}`;
       totalDisplay = 10;
       progress = (finalRoundNumber / 10) * 100; // Reset progress for final showdown
     } else {
-      // Regular rounds (1-50)
+      // Regular rounds (1-60) - show just "Round X" without total
       roundDisplay = this.currentRound + 1;
-      totalDisplay = 50;
-      progress = ((this.currentRound + 1) / 50) * 100; // Progress based on 50 rounds
+      totalDisplay = null; // No total count shown
+      progress = ((this.currentRound + 1) / 60) * 100; // Progress based on 60 rounds
     }
 
     return {

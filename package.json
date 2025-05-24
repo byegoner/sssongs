@@ -13,7 +13,8 @@
     "fetch-help": "node scripts/fetchSpotifySongs.js --help"
   },
   "devDependencies": {
-    "vite": "^5.0.0"
+    "vite": "^6.0.0",
+    "@vitejs/plugin-basic-ssl": "^2.0.0"
   },
   "keywords": [
     "kpop",

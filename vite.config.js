@@ -1,6 +1,9 @@
 import { defineConfig } from "vite";
+import basicSsl from "@vitejs/plugin-basic-ssl";
 
 export default defineConfig({
+  plugins: [basicSsl()],
+
   base: "/songs/",
   build: {
     outDir: "dist",
@@ -18,7 +21,8 @@ export default defineConfig({
       },
     },
   },
-  // server: {
-  //   allowedHosts: true,
-  // },
+  server: {
+    https: true, // same as "--https" flag
+    //   allowedHosts: true,
+  },
 });
