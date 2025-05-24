@@ -29,7 +29,13 @@ export class SongSorter {
     let availableSongs = [...this.songs];
     let phaseMessage = "";
 
-    if (progress >= 0.7) {
+    if (this.currentRound >= 50) {
+      // Phase 4: Final Showdown (top 25%)
+      const sortedSongs = [...this.songs].sort((a, b) => b.rating - a.rating);
+      const topCount = Math.floor(this.songs.length * 0.25);
+      availableSongs = sortedSongs.slice(0, Math.max(topCount, 3)); // Ensure at least 3 songs
+      phaseMessage = "🏆 Final Showdown - Elite competition";
+    } else if (progress >= 0.7) {
       // Phase 3: Precision Ranking (top 50%)
       const sortedSongs = [...this.songs].sort((a, b) => b.rating - a.rating);
       const topCount = Math.floor(this.songs.length * 0.5);
@@ -44,15 +50,21 @@ export class SongSorter {
     }
     // Phase 1: Full Discovery (0-40%) - use all songs, no message needed
 
-    // Add safety net for songs that haven't appeared recently
-    const neglectedSongs = this.songs.filter(song => {
-      const lastAppearance = this.getLastAppearance(song.id);
-      return lastAppearance === -1 || (this.currentRound - lastAppearance) > 10;
-    });
+    // Add safety net for songs that haven't appeared recently (but not in final showdown)
+    if (this.currentRound < 50) {
+      const neglectedSongs = this.songs.filter(song => {
+        const lastAppearance = this.getLastAppearance(song.id);
+        return lastAppearance === -1 || (this.currentRound - lastAppearance) > 10;
+      });
 
-    if (neglectedSongs.length > 0 && Math.random() < 0.3) {
-      // 30% chance to include a neglected song
-      availableSongs = [...availableSongs, ...neglectedSongs];
+      if (neglectedSongs.length > 0 && Math.random() < 0.3) {
+        // 30% chance to include a neglected song
+        // Only add neglected songs that aren't already in availableSongs
+        const uniqueNeglectedSongs = neglectedSongs.filter(neglectedSong =>
+          !availableSongs.some(availableSong => availableSong.id === neglectedSong.id)
+        );
+        availableSongs = [...availableSongs, ...uniqueNeglectedSongs];
+      }
     }
 
     // Calculate weights based on inverse appearances
@@ -113,12 +125,31 @@ export class SongSorter {
 
     options.forEach(song => song.appearances++);
 
+    // Custom round display logic
+    let roundDisplay, totalDisplay, progress;
+
+    if (this.currentRound >= 50) {
+      // Final Showdown rounds (51-60)
+      const finalRoundNumber = this.currentRound - 49; // 1-10 for rounds 51-60
+      roundDisplay = `Final Showdown ${finalRoundNumber}`;
+      totalDisplay = 10;
+      progress = (finalRoundNumber / 10) * 100; // Reset progress for final showdown
+    } else {
+      // Regular rounds (1-50)
+      roundDisplay = this.currentRound + 1;
+      totalDisplay = 50;
+      progress = ((this.currentRound + 1) / 50) * 100; // Progress based on 50 rounds
+    }
+
     return {
       round: this.currentRound + 1,
+      roundDisplay: roundDisplay,
       totalRounds: this.totalRounds,
+      totalDisplay: totalDisplay,
       options: options,
-      progress: ((this.currentRound + 1) / this.totalRounds) * 100,
-      phaseMessage: this.currentPhaseMessage || null
+      progress: progress,
+      phaseMessage: this.currentPhaseMessage || null,
+      isFinalShowdown: this.currentRound >= 50
     };
   }
 

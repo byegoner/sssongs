@@ -1,7 +1,7 @@
 import { SongSorter, getSpotifyEmbedUrl, tripleSSongs } from './songSorter.js';
 
 const gameContainer = document.getElementById('game-container');
-let sorter = new SongSorter(tripleSSongs, 50);
+let sorter = new SongSorter(tripleSSongs, 60);
 let currentRoundOptions = null;
 let preloadedEmbeds = new Map();
 
@@ -11,11 +11,7 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
-function preloadSpotifyEmbed(spotifyId) {
-  if (preloadedEmbeds.has(spotifyId)) {
-    return preloadedEmbeds.get(spotifyId);
-  }
-
+function createSpotifyEmbed(spotifyId) {
   const iframe = document.createElement('iframe');
   iframe.src = getSpotifyEmbedUrl(spotifyId);
   iframe.width = "100%";
@@ -26,16 +22,38 @@ function preloadSpotifyEmbed(spotifyId) {
   iframe.style.margin = "0";
   iframe.style.width = "100%";
   iframe.style.height = "100%";
+  return iframe;
+}
 
+function preloadSpotifyEmbed(spotifyId) {
+  if (preloadedEmbeds.has(spotifyId)) {
+    return preloadedEmbeds.get(spotifyId);
+  }
+
+  const iframe = createSpotifyEmbed(spotifyId);
   preloadedEmbeds.set(spotifyId, iframe);
   return iframe;
 }
 
-function preloadUpcomingSongs() {
-  // Preload next 9 songs (3 rounds ahead)
-  for (let i = 0; i < 3; i++) {
+function aggressivePreload(currentRound) {
+  // Preload current round songs (already provided)
+  currentRound.options.forEach(song => {
+    preloadSpotifyEmbed(song.spotifyId);
+  });
+
+  // Preload next 5 rounds ahead
+  for (let i = 1; i <= 5; i++) {
     const tempSorter = new SongSorter([...sorter.songs], sorter.totalRounds);
+
+    // Copy the current sorter's state
     tempSorter.currentRound = sorter.currentRound + i;
+    tempSorter.history = [...sorter.history];
+
+    // Copy song ratings and appearances
+    sorter.songs.forEach((song, index) => {
+      tempSorter.songs[index].rating = song.rating;
+      tempSorter.songs[index].appearances = song.appearances;
+    });
 
     if (tempSorter.currentRound < tempSorter.totalRounds) {
       const futureRound = tempSorter.getCurrentRound();
@@ -58,29 +76,27 @@ function renderRound() {
 
   currentRoundOptions = round.options;
 
-  // Preload current round embeds
-  round.options.forEach(song => {
-    preloadSpotifyEmbed(song.spotifyId);
-  });
-
-  // Preload upcoming rounds in background
-  setTimeout(() => preloadUpcomingSongs(), 100);
+  // Aggressive preloading with current round data
+  aggressivePreload(round);
 
   gameContainer.innerHTML = `
     <div class="round-info">
-      <h2>Round ${round.round}/${round.totalRounds}</h2>
+      <h2>${round.isFinalShowdown ? round.roundDisplay : `Round ${round.roundDisplay}/${round.totalDisplay}`}</h2>
       ${round.phaseMessage ? `<p class="phase-message">${round.phaseMessage}</p>` : ''}
       <div class="progress-bar">
-        <div class="progress" style="width: ${round.progress}%"></div>
+        <div class="progress ${round.isFinalShowdown ? 'burning' : ''}" style="width: ${round.progress}%"></div>
       </div>
     </div>
     <div class="song-options">
       ${round.options.map(song => `
         <div class="song-option">
-          <div class="embed-container" data-spotify-id="${song.spotifyId}"></div>
-          <button class="select-button" onclick="selectSong(${song.id})"></button>
+          <div class="embed-and-button">
+            <div class="embed-container" data-spotify-id="${song.spotifyId}"></div>
+            <button class="select-button" onclick="selectSong(${song.id})"></button>
+          </div>
           <div class="song-content">
-            <div class="song-info">
+            <h4 class="mobile-song-title">${escapeHtml(song.title)}</h4>
+            <div class="desktop-song-info">
               <h3>${escapeHtml(song.title)}</h3>
               <p>${escapeHtml(song.album)}</p>
             </div>
@@ -90,7 +106,7 @@ function renderRound() {
     </div>
   `;
 
-  // Insert preloaded embeds
+  // Use cached embeds immediately
   round.options.forEach(song => {
     const container = gameContainer.querySelector(`[data-spotify-id="${song.spotifyId}"]`);
     const cachedEmbed = preloadedEmbeds.get(song.spotifyId);
@@ -102,7 +118,6 @@ function renderRound() {
 
 function renderResults() {
   const rankings = sorter.getRankings();
-  const stats = sorter.getStats();
 
   gameContainer.innerHTML = `
     <div class="results">
@@ -112,15 +127,8 @@ function renderResults() {
           <div class="ranking-item">
             <span class="rank">#${song.rank}</span>
             <span class="title">${escapeHtml(song.title)}</span>
-            <span class="rating">${song.rating}</span>
           </div>
         `).join('')}
-      </div>
-      <div class="stats">
-        <h3>Statistics</h3>
-        <p>Total Comparisons: ${stats.totalComparisons}</p>
-        <p>Average Appearances: ${stats.avgAppearances}</p>
-        <p>Distribution Fairness: ${stats.distributionFairness}</p>
       </div>
       <button onclick="restart()">Start Over</button>
     </div>
@@ -155,7 +163,8 @@ window.selectSong = function(songId) {
 };
 
 window.restart = function() {
-  sorter = new SongSorter(tripleSSongs, 50);
+  preloadedEmbeds.clear();
+  sorter = new SongSorter(tripleSSongs, 60);
   renderRound();
 };
 
