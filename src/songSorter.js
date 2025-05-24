@@ -1,11 +1,11 @@
-import triplesData from './data/triples-songs.json' assert { type: 'json' };
+import triplesData from "./data/triples-songs.json" assert { type: "json" };
 
 export class SongSorter {
   constructor(songs, totalRounds = 35) {
-    this.songs = songs.map(song => ({
+    this.songs = songs.map((song) => ({
       ...song,
       rating: 1200,
-      appearances: 0
+      appearances: 0,
     }));
     this.totalRounds = totalRounds;
     this.currentRound = 0;
@@ -13,13 +13,14 @@ export class SongSorter {
   }
 
   calculateElo(winnerRating, loserRating, kFactor = 32) {
-    const expectedWin = 1 / (1 + Math.pow(10, (loserRating - winnerRating) / 400));
+    const expectedWin =
+      1 / (1 + Math.pow(10, (loserRating - winnerRating) / 400));
     const newWinnerRating = winnerRating + kFactor * (1 - expectedWin);
     const newLoserRating = loserRating + kFactor * (0 - (1 - expectedWin));
 
     return {
       winner: Math.round(newWinnerRating),
-      loser: Math.round(newLoserRating)
+      loser: Math.round(newLoserRating),
     };
   }
 
@@ -35,13 +36,13 @@ export class SongSorter {
       const topCount = Math.floor(this.songs.length * 0.25);
       availableSongs = sortedSongs.slice(0, Math.max(topCount, 3)); // Ensure at least 3 songs
       phaseMessage = "🏆 Final Showdown - Elite competition";
-    } else if (progress >= 0.7) {
+    } else if (progress >= 0.58) {
       // Phase 3: Precision Ranking (top 50%)
       const sortedSongs = [...this.songs].sort((a, b) => b.rating - a.rating);
       const topCount = Math.floor(this.songs.length * 0.5);
       availableSongs = sortedSongs.slice(0, Math.max(topCount, 3)); // Ensure at least 3 songs
       phaseMessage = "🎯 Focusing on top contenders";
-    } else if (progress >= 0.4) {
+    } else if (progress >= 0.33) {
       // Phase 2: Focus on Contenders (top 75%)
       const sortedSongs = [...this.songs].sort((a, b) => b.rating - a.rating);
       const topCount = Math.floor(this.songs.length * 0.75);
@@ -52,33 +53,39 @@ export class SongSorter {
 
     // Add safety net for songs that haven't appeared recently (but not in final showdown)
     if (this.currentRound < 50) {
-      const neglectedSongs = this.songs.filter(song => {
+      const neglectedSongs = this.songs.filter((song) => {
         const lastAppearance = this.getLastAppearance(song.id);
-        return lastAppearance === -1 || (this.currentRound - lastAppearance) > 10;
+        return lastAppearance === -1 || this.currentRound - lastAppearance > 10;
       });
 
       if (neglectedSongs.length > 0 && Math.random() < 0.3) {
         // 30% chance to include a neglected song
         // Only add neglected songs that aren't already in availableSongs
-        const uniqueNeglectedSongs = neglectedSongs.filter(neglectedSong =>
-          !availableSongs.some(availableSong => availableSong.id === neglectedSong.id)
+        const uniqueNeglectedSongs = neglectedSongs.filter(
+          (neglectedSong) =>
+            !availableSongs.some(
+              (availableSong) => availableSong.id === neglectedSong.id,
+            ),
         );
         availableSongs = [...availableSongs, ...uniqueNeglectedSongs];
       }
     }
 
     // Calculate weights based on inverse appearances
-    const weights = availableSongs.map(song => 1 / (song.appearances + 1));
+    const weights = availableSongs.map((song) => 1 / (song.appearances + 1));
 
     const selected = [];
     const selectablePool = [...availableSongs];
 
     for (let i = 0; i < 3; i++) {
-      const availableWeights = selectablePool.map(song => {
+      const availableWeights = selectablePool.map((song) => {
         const originalIndex = availableSongs.indexOf(song);
         return weights[originalIndex];
       });
-      const availableTotalWeight = availableWeights.reduce((sum, w) => sum + w, 0);
+      const availableTotalWeight = availableWeights.reduce(
+        (sum, w) => sum + w,
+        0,
+      );
 
       if (availableTotalWeight === 0) break; // Safety check
 
@@ -123,7 +130,7 @@ export class SongSorter {
 
     const options = this.selectThreeSongs();
 
-    options.forEach(song => song.appearances++);
+    options.forEach((song) => song.appearances++);
 
     // Custom round display logic
     let roundDisplay, totalDisplay, progress;
@@ -149,7 +156,7 @@ export class SongSorter {
       options: options,
       progress: progress,
       phaseMessage: this.currentPhaseMessage || null,
-      isFinalShowdown: this.currentRound >= 50
+      isFinalShowdown: this.currentRound >= 50,
     };
   }
 
@@ -158,15 +165,15 @@ export class SongSorter {
 
     // Get current round options before advancing
     const options = this.selectThreeSongs();
-    const winner = options.find(song => song.id === winnerId);
-    const losers = options.filter(song => song.id !== winnerId);
+    const winner = options.find((song) => song.id === winnerId);
+    const losers = options.filter((song) => song.id !== winnerId);
 
     if (!winner) return;
 
     // Update appearances
-    options.forEach(song => song.appearances++);
+    options.forEach((song) => song.appearances++);
 
-    losers.forEach(loser => {
+    losers.forEach((loser) => {
       const result = this.calculateElo(winner.rating, loser.rating);
       winner.rating = result.winner;
       loser.rating = result.loser;
@@ -174,9 +181,9 @@ export class SongSorter {
 
     this.history.push({
       round: this.currentRound + 1,
-      options: options.map(s => s.id),
+      options: options.map((s) => s.id),
       winner: winnerId,
-      timestamp: Date.now()
+      timestamp: Date.now(),
     });
 
     this.currentRound++;
@@ -187,7 +194,7 @@ export class SongSorter {
       .sort((a, b) => b.rating - a.rating)
       .map((song, index) => ({
         rank: index + 1,
-        ...song
+        ...song,
       }));
   }
 
@@ -196,16 +203,18 @@ export class SongSorter {
   }
 
   getStats() {
-    const avgAppearances = this.songs.reduce((sum, song) => sum + song.appearances, 0) / this.songs.length;
-    const minAppearances = Math.min(...this.songs.map(s => s.appearances));
-    const maxAppearances = Math.max(...this.songs.map(s => s.appearances));
+    const avgAppearances =
+      this.songs.reduce((sum, song) => sum + song.appearances, 0) /
+      this.songs.length;
+    const minAppearances = Math.min(...this.songs.map((s) => s.appearances));
+    const maxAppearances = Math.max(...this.songs.map((s) => s.appearances));
 
     return {
       avgAppearances: avgAppearances.toFixed(1),
       minAppearances,
       maxAppearances,
       totalComparisons: this.currentRound * 2,
-      distributionFairness: maxAppearances - minAppearances
+      distributionFairness: maxAppearances - minAppearances,
     };
   }
 }
