@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:deploy": "vite build && cp dist/index.html dist/songs.html",
     "preview": "vite preview",
     "fetch-songs": "node scripts/fetchSpotifySongs.js",
     "fetch-triples": "node scripts/fetchSpotifySongs.js tripleS --ignore-instrumental --min-duration 120",
