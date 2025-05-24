@@ -1,0 +1,959 @@
+{
+  "artist": {
+    "name": "tripleS",
+    "id": "5Z71xE9prhpHrqL5thVMyK",
+    "genres": [
+      "k-pop"
+    ],
+    "popularity": 64
+  },
+  "songs": [
+    {
+      "id": 1,
+      "title": "Generation",
+      "album": "Acid Angel from Asia <ACCESS>",
+      "releaseDate": "2022-10-28",
+      "spotifyId": "3KuCXHNvtheCDzwZpaRR9I",
+      "previewUrl": null,
+      "durationMs": 164186,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Rolex",
+      "album": "Acid Angel from Asia <ACCESS>",
+      "releaseDate": "2022-10-28",
+      "spotifyId": "3z0XqZoBbkFItOeThmpKBy",
+      "previewUrl": null,
+      "durationMs": 192973,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "찰나 (Charla)",
+      "album": "Acid Angel from Asia <ACCESS>",
+      "releaseDate": "2022-10-28",
+      "spotifyId": "3TxGRPqXJHLdyLCxhoe581",
+      "previewUrl": null,
+      "durationMs": 183453,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Dimension (AAA Ver.)",
+      "album": "Acid Angel from Asia <ACCESS>",
+      "releaseDate": "2022-10-28",
+      "spotifyId": "6gix4NyPtppr6x1DrncDfv",
+      "previewUrl": null,
+      "durationMs": 191493,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Beam",
+      "album": "ASSEMBLE",
+      "releaseDate": "2023-02-13",
+      "spotifyId": "7wNBF6FabnJz67tibcTahN",
+      "previewUrl": null,
+      "durationMs": 158933,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Rising",
+      "album": "ASSEMBLE",
+      "releaseDate": "2023-02-13",
+      "spotifyId": "53k2MlAwVH8RpHxkkjBg4B",
+      "previewUrl": null,
+      "durationMs": 159933,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Colorful",
+      "album": "ASSEMBLE",
+      "releaseDate": "2023-02-13",
+      "spotifyId": "5QnJpTrT60WnqMEbnQ7dbY",
+      "previewUrl": null,
+      "durationMs": 202080,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "The Baddest",
+      "album": "ASSEMBLE",
+      "releaseDate": "2023-02-13",
+      "spotifyId": "4Xfoh0FyPCiqCEx0Hy2mNr",
+      "previewUrl": null,
+      "durationMs": 215346,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "New Look",
+      "album": "ASSEMBLE",
+      "releaseDate": "2023-02-13",
+      "spotifyId": "10YnFGCIP9cpYU43CN8QN7",
+      "previewUrl": null,
+      "durationMs": 208026,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Cherry Talk",
+      "album": "+(KR) ystal Eyes <AESTHETIC>",
+      "releaseDate": "2023-05-04",
+      "spotifyId": "3ZFfGfDaWO8VJnDQQbS46n",
+      "previewUrl": null,
+      "durationMs": 171840,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Touch",
+      "album": "+(KR) ystal Eyes <AESTHETIC>",
+      "releaseDate": "2023-05-04",
+      "spotifyId": "0I7Wsy7E7KijpC8Lg1bV4p",
+      "previewUrl": null,
+      "durationMs": 176533,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "(숨겨 봐봐) Hide & Seek",
+      "album": "+(KR) ystal Eyes <AESTHETIC>",
+      "releaseDate": "2023-05-04",
+      "spotifyId": "1kPG42BrlvggbN82Ix7pBe",
+      "previewUrl": null,
+      "durationMs": 174173,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Deja-Vu",
+      "album": "+(KR) ystal Eyes <AESTHETIC>",
+      "releaseDate": "2023-05-04",
+      "spotifyId": "5mjBFf1r664AOMsFzQXyDa",
+      "previewUrl": null,
+      "durationMs": 172520,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Dimension (KRE Ver.)",
+      "album": "+(KR) ystal Eyes <AESTHETIC>",
+      "releaseDate": "2023-05-04",
+      "spotifyId": "4Gy0jr5kuKDViaPN2QS5it",
+      "previewUrl": null,
+      "durationMs": 183333,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Touch+",
+      "album": "+(KR) ystal Eyes <Touch+>",
+      "releaseDate": "2023-06-27",
+      "spotifyId": "4CYc177Eh4Mh0Iax8CpqDY",
+      "previewUrl": null,
+      "durationMs": 188080,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Cherry Gene 'Hy-Fluid Mix'",
+      "album": "Acid Eyes <Cherry Gene>",
+      "releaseDate": "2023-07-06",
+      "spotifyId": "4AMfEaTl3Flm1h2vWdTRS0",
+      "previewUrl": null,
+      "durationMs": 142746,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Cherry Gene 'Testarossa Mix'",
+      "album": "Acid Eyes <Cherry Gene>",
+      "releaseDate": "2023-07-06",
+      "spotifyId": "32bZWrrky7fksCJPbCr9qG",
+      "previewUrl": null,
+      "durationMs": 167560,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Girls' Capitalism",
+      "album": "LOVElution <ↀ>",
+      "releaseDate": "2023-08-17",
+      "spotifyId": "3B9kAk2XZ4n4RK8HpxkkdK",
+      "previewUrl": null,
+      "durationMs": 218106,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "복합성 (Complexity)",
+      "album": "LOVElution <ↀ>",
+      "releaseDate": "2023-08-17",
+      "spotifyId": "2I4Z2R9HguQLy5fUsaTc76",
+      "previewUrl": null,
+      "durationMs": 158106,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Black Soul Dress",
+      "album": "LOVElution <ↀ>",
+      "releaseDate": "2023-08-17",
+      "spotifyId": "55qqZWgKUhVRzZKEVU3Tm6",
+      "previewUrl": null,
+      "durationMs": 216813,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Seoul Sonyo Sound",
+      "album": "LOVElution <ↀ>",
+      "releaseDate": "2023-08-17",
+      "spotifyId": "158v6lUZhHjsogdUtaPpxE",
+      "previewUrl": null,
+      "durationMs": 150186,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Cry Baby",
+      "album": "LOVElution <ↀ>",
+      "releaseDate": "2023-08-17",
+      "spotifyId": "2bxkGBhNOiBFOsDB1wmDr8",
+      "previewUrl": null,
+      "durationMs": 157480,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Speed Love",
+      "album": "LOVElution <ↀ>",
+      "releaseDate": "2023-08-17",
+      "spotifyId": "0u44OLsmgPHU56Dq9tsEOD",
+      "previewUrl": null,
+      "durationMs": 148266,
+      "explicit": false,
+      "trackNumber": 7,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Invincible",
+      "album": "EVOLution <⟡>",
+      "releaseDate": "2023-10-11",
+      "spotifyId": "7nwmQqZR4RDktRtHTKpytm",
+      "previewUrl": null,
+      "durationMs": 197386,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Rhodanthe",
+      "album": "EVOLution <⟡>",
+      "releaseDate": "2023-10-11",
+      "spotifyId": "2IulC81PkpA77dy7IqqwgD",
+      "previewUrl": null,
+      "durationMs": 227120,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Heavy Metal Wings",
+      "album": "EVOLution <⟡>",
+      "releaseDate": "2023-10-11",
+      "spotifyId": "440PcZN8eK9e7lkl7BLwqO",
+      "previewUrl": null,
+      "durationMs": 195680,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "미열 37.5",
+      "album": "EVOLution <⟡>",
+      "releaseDate": "2023-10-11",
+      "spotifyId": "0lfgwSwEeiMyndXqMzxqSU",
+      "previewUrl": null,
+      "durationMs": 221986,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Moto Princess",
+      "album": "EVOLution <⟡>",
+      "releaseDate": "2023-10-11",
+      "spotifyId": "1H8jhQrGNFigSmwrbyrCzt",
+      "previewUrl": null,
+      "durationMs": 194560,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Oui",
+      "album": "EVOLution <⟡>",
+      "releaseDate": "2023-10-11",
+      "spotifyId": "5DI6uuGcbM1GqSC6uGjw0y",
+      "previewUrl": null,
+      "durationMs": 159333,
+      "explicit": false,
+      "trackNumber": 7,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Just Do It",
+      "album": "NXT <Just Do It>",
+      "releaseDate": "2023-12-23",
+      "spotifyId": "1M8UwTapD2TXA31ZmcQe24",
+      "previewUrl": null,
+      "durationMs": 153506,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Door",
+      "album": "Aria <Structure Of Sadness>",
+      "releaseDate": "2024-01-15",
+      "spotifyId": "1rIMSGuRwJQXwnLG5LjPRy",
+      "previewUrl": null,
+      "durationMs": 188026,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 32,
+      "title": "첫 이별 (Farewell My First)",
+      "album": "Aria <Structure Of Sadness>",
+      "releaseDate": "2024-01-15",
+      "spotifyId": "6qNmSfA3puyB5n5PRbE6RC",
+      "previewUrl": null,
+      "durationMs": 209266,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Girls Never Die",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "spotifyId": "45OflED18VsURGw2z0Y6Cv",
+      "previewUrl": null,
+      "durationMs": 187920,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Heart Raider",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "spotifyId": "0JPHdF3YB7CUo719qOmmwq",
+      "previewUrl": null,
+      "durationMs": 179533,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Midnight Flower",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "spotifyId": "2HU48Kw5r9GrFAlbx9scnZ",
+      "previewUrl": null,
+      "durationMs": 166880,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 36,
+      "title": "White Soul Sneakers",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "spotifyId": "4n3aKGx9R4feOxCeOiUWnU",
+      "previewUrl": null,
+      "durationMs": 183280,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Chiyu",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "spotifyId": "6bW8W6BdvCTmi1PRq0s25r",
+      "previewUrl": null,
+      "durationMs": 170186,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 38,
+      "title": "24",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "spotifyId": "16xTL1XLhK8fw56SHVrXzT",
+      "previewUrl": null,
+      "durationMs": 153373,
+      "explicit": false,
+      "trackNumber": 7,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Beyond the Beyond",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "spotifyId": "0jtoEsi7ANy3z7bS2l1EuW",
+      "previewUrl": null,
+      "durationMs": 182293,
+      "explicit": false,
+      "trackNumber": 8,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Non Scale",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "spotifyId": "3brPVtl4kc0NvvTxWZDR2U",
+      "previewUrl": null,
+      "durationMs": 206226,
+      "explicit": false,
+      "trackNumber": 9,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Dimension",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "spotifyId": "6wXmLFm3UrdGydNRyFexi3",
+      "previewUrl": null,
+      "durationMs": 197333,
+      "explicit": false,
+      "trackNumber": 10,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Inner Dance",
+      "album": "Glow <Inner Dance>",
+      "releaseDate": "2024-06-21",
+      "spotifyId": "2O4pDMQQYRAafCrlVP5AEU",
+      "previewUrl": null,
+      "durationMs": 181346,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Hit the Floor",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "spotifyId": "5DQc9DipgMf8sTBmW20rb7",
+      "previewUrl": null,
+      "durationMs": 177186,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Choom",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "spotifyId": "5Ap0n8oJQfvHPAkmLQUGdS",
+      "previewUrl": null,
+      "durationMs": 191626,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Éclair",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "spotifyId": "3VWJne80pflRcDUZI3iEOY",
+      "previewUrl": null,
+      "durationMs": 169173,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 46,
+      "title": "연애소설 (Love Soseol)",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "spotifyId": "6V60Zxz4PRhwnEXnVuCJm1",
+      "previewUrl": null,
+      "durationMs": 178520,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Atmosphere (VV Ver.)",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "spotifyId": "64TdZ6YlatMF1RB1zLmNvh",
+      "previewUrl": null,
+      "durationMs": 157160,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 48,
+      "title": "12 Rings",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "spotifyId": "6ruUOOY6Tl3blxRvfXtHR9",
+      "previewUrl": null,
+      "durationMs": 200466,
+      "explicit": false,
+      "trackNumber": 7,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 49,
+      "title": "Vision",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "spotifyId": "7t88PR7o1ER3VgYbhX2on0",
+      "previewUrl": null,
+      "durationMs": 167146,
+      "explicit": false,
+      "trackNumber": 8,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Bionic Power",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "spotifyId": "3QdLoEk1mUKEvdJwsts53z",
+      "previewUrl": null,
+      "durationMs": 152506,
+      "explicit": false,
+      "trackNumber": 9,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 51,
+      "title": "Polaroid (by NaKyoung, Mayu, ShiOn, ChaeWon)",
+      "album": "Polaroid",
+      "releaseDate": "2024-11-15",
+      "spotifyId": "0dZkWnY07ZZPlVCk0qkNhj",
+      "previewUrl": null,
+      "durationMs": 179586,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 52,
+      "title": "アンタイトル",
+      "album": "tripleS ∞! <アンタイトル>",
+      "releaseDate": "2024-11-20",
+      "spotifyId": "627zjbaMPyIxX8SMy9bbTq",
+      "previewUrl": null,
+      "durationMs": 161906,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 53,
+      "title": "### - ∞! Ver.",
+      "album": "tripleS ∞! <アンタイトル>",
+      "releaseDate": "2024-11-20",
+      "spotifyId": "4Qshcwe6tbVMpTESfdXd12",
+      "previewUrl": null,
+      "durationMs": 189146,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 54,
+      "title": "###",
+      "album": "tripleS ∞! <アンタイトル>",
+      "releaseDate": "2024-11-20",
+      "spotifyId": "7ry6yrqTQwLC0DJvgsNxBP",
+      "previewUrl": null,
+      "durationMs": 189146,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 55,
+      "title": "Dreaming (by YooYeon, YuBin, DaHyun, ShiOn)",
+      "album": "Dreaming (Shooting Stars X tripleS)",
+      "releaseDate": "2024-11-26",
+      "spotifyId": "575TGU52eEm8CaZlPxn6M2",
+      "previewUrl": null,
+      "durationMs": 186226,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 56,
+      "title": "PainDrop (by SeoYeon, JiWoo, YuBin, SoHyun)",
+      "album": "Friendly Rivalry (Music from the U+ Original Series), Pt. 4",
+      "releaseDate": "2025-03-04",
+      "spotifyId": "0lBpd8IbpD4m7BydKwNPqk",
+      "previewUrl": null,
+      "durationMs": 212960,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 57,
+      "title": "Girls Never Die -Japanese Version-",
+      "album": "Girls Never Die -Japanese Version-",
+      "releaseDate": "2025-04-12",
+      "spotifyId": "4cVNX1p1e4HxWesDafvBbB",
+      "previewUrl": null,
+      "durationMs": 208053,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 58,
+      "title": "Rising -Japanese Version-",
+      "album": "Rising -Japanese Version-",
+      "releaseDate": "2025-04-12",
+      "spotifyId": "5NGZoAaQjbwRHPsQyWa32n",
+      "previewUrl": null,
+      "durationMs": 157186,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 59,
+      "title": "깨어 (Are You Alive)",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "spotifyId": "0hRr7x68aApt0TX1AIAA9W",
+      "previewUrl": null,
+      "durationMs": 186720,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 60,
+      "title": "추리소설 (Detective Soseol)",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "spotifyId": "19i3qAixHHFYKtd81VoaCJ",
+      "previewUrl": null,
+      "durationMs": 200440,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 61,
+      "title": "어제 우리 불꽃놀이 (Firework Diary)",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "spotifyId": "4N2EvboRvPcQoFHazW2ldp",
+      "previewUrl": null,
+      "durationMs": 188800,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 62,
+      "title": "Love Child",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "spotifyId": "4J79sUP2a1FlG7f80M4enw",
+      "previewUrl": null,
+      "durationMs": 181226,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 63,
+      "title": "Persona",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "spotifyId": "55FCeDFmHSShtU1b4CccWz",
+      "previewUrl": null,
+      "durationMs": 182120,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 64,
+      "title": "Too Hot",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "spotifyId": "5QpRXnfLBTMxnzbTU2E8Ai",
+      "previewUrl": null,
+      "durationMs": 201013,
+      "explicit": false,
+      "trackNumber": 7,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 65,
+      "title": "Diablo",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "spotifyId": "0CWQYYZlYVVpuU81wNlDNQ",
+      "previewUrl": null,
+      "durationMs": 200240,
+      "explicit": false,
+      "trackNumber": 8,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 66,
+      "title": "Friend Zone",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "spotifyId": "7jrEsl6pQLRgFflXAvBdSk",
+      "previewUrl": null,
+      "durationMs": 197466,
+      "explicit": false,
+      "trackNumber": 9,
+      "artists": [
+        "tripleS"
+      ]
+    },
+    {
+      "id": 67,
+      "title": "Love2Love",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "spotifyId": "3geeG4xRCQqka9ClnipmQk",
+      "previewUrl": null,
+      "durationMs": 190546,
+      "explicit": false,
+      "trackNumber": 10,
+      "artists": [
+        "tripleS"
+      ]
+    }
+  ],
+  "totalSongs": 67,
+  "fetchedAt": "2025-05-24T15:08:51.359Z",
+  "filterOptions": {
+    "ignoreInstrumental": true,
+    "ignoreRemix": false,
+    "ignoreKeywords": [],
+    "includeOnly": [],
+    "minDurationSeconds": 120
+  }
+}

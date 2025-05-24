@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "fetch-songs": "node scripts/fetchSpotifySongs.js",
-    "fetch-triples": "node scripts/fetchSpotifySongs.js tripleS --ignore-instrumental",
+    "fetch-triples": "node scripts/fetchSpotifySongs.js tripleS --ignore-instrumental --min-duration 120",
     "fetch-help": "node scripts/fetchSpotifySongs.js --help"
   },
   "devDependencies": {
