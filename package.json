@@ -1,0 +1,25 @@
+{
+  "name": "kpop-song-sorter",
+  "version": "1.0.0",
+  "description": "A K-pop song sorter app using Elo rating system",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "fetch-songs": "node scripts/fetchSpotifySongs.js",
+    "fetch-triples": "node scripts/fetchSpotifySongs.js tripleS"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "keywords": [
+    "kpop",
+    "music",
+    "sorter",
+    "elo",
+    "ranking"
+  ],
+  "author": "",
+  "license": "MIT"
+}
