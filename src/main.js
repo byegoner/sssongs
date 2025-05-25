@@ -15,7 +15,7 @@ function initializeApp() {
   try {
     console.log(`🔄 Loading ${MUSIC_PROVIDER} data...`);
     tripleSSongs = loadProviderData(MUSIC_PROVIDER);
-    sorter = new SongSorter(tripleSSongs, 70, MUSIC_PROVIDER);
+    sorter = new SongSorter(tripleSSongs, MUSIC_PROVIDER);
 
     if (sorter.songs.length === 0) {
       showNoSongsError();
@@ -228,19 +228,41 @@ function renderRound() {
 
   // No preloading needed since embeds load on-demand
 
+  // Determine phase CSS classes
+  const phaseInfo = round.phaseInfo;
+  let progressClass = "";
+  let phaseMessageClass = "";
+
+  if (phaseInfo) {
+    switch (phaseInfo.type) {
+      case 'discovery':
+        progressClass = "phase-discovery";
+        phaseMessageClass = "phase-discovery";
+        break;
+      case 'elimination':
+        progressClass = "phase-elimination";
+        phaseMessageClass = "phase-elimination";
+        break;
+      case 'head-to-head':
+        progressClass = "phase-head-to-head";
+        phaseMessageClass = "phase-head-to-head";
+        break;
+    }
+  }
+
   gameContainer.innerHTML = `
     <div class="round-info">
       <h2>${round.isFinalShowdown ? round.roundDisplay : `Round ${round.roundDisplay}`}</h2>
-      ${round.phaseMessage ? `<p class="phase-message">${round.phaseMessage}</p>` : ""}
+      ${round.phaseMessage ? `<p class="phase-message ${phaseMessageClass}">${round.phaseMessage}</p>` : ""}
       <div class="progress-bar">
-        <div class="progress ${round.isFinalShowdown ? "burning" : ""}" style="width: ${round.progress}%"></div>
+        <div class="progress ${progressClass}" style="width: ${round.progress}%"></div>
       </div>
     </div>
     <div class="song-options">
       ${round.options
         .map(
-          (song) => `
-        <div class="song-option">
+          (song, index) => `
+        <div class="song-option fade-in-${index + 1}">
           <div class="embed-and-button">
             <div class="embed-container" data-embed-id="${getEmbedId(song)}" data-provider="${MUSIC_PROVIDER}">
               <div class="play-placeholder" ${song.albumCover ? `style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('${song.albumCover}'); background-size: cover; background-position: center;"` : ''}>
@@ -270,6 +292,14 @@ function renderRound() {
 
   // Clear previous active embeds
   activeEmbeds.clear();
+
+  // Clean up animation classes after animations complete
+  setTimeout(() => {
+    const songOptions = document.querySelectorAll('.song-option');
+    songOptions.forEach(option => {
+      option.classList.remove('fade-in-1', 'fade-in-2', 'fade-in-3', 'fade-out-1', 'fade-out-2', 'fade-out-3');
+    });
+  }, 600); // Very quick cleanup - after all fade-in animations complete
 
   // No automatic embed creation - embeds load on-demand when play button is clicked
 }
@@ -554,10 +584,33 @@ function fallbackShare(blob, text) {
     });
 }
 
+window.selectSong = function (songId) {
+  console.log(`🎵 Song selected: ${songId}`);
+
+  // Trigger staggered fade out animation
+  const songOptions = document.querySelectorAll('.song-option');
+  songOptions.forEach((option, index) => {
+    option.classList.add(`fade-out-${index + 1}`);
+  });
+
+  // Disable all selection buttons during transition
+  const selectButtons = document.querySelectorAll('.select-button');
+  selectButtons.forEach(button => {
+    button.disabled = true;
+    button.style.pointerEvents = 'none';
+  });
+
+  // Wait for fade out animation to complete, then update
+  setTimeout(() => {
+    sorter.selectWinner(songId);
+    renderRound();
+  }, 300); // Very quick - wait for all fade-out animations to complete
+};
+
 window.restart = function () {
   preloadedEmbeds.clear();
   if (tripleSSongs.length > 0) {
-    sorter = new SongSorter(tripleSSongs, 70, MUSIC_PROVIDER);
+    sorter = new SongSorter(tripleSSongs, MUSIC_PROVIDER);
     renderRound();
   } else {
     initializeApp();
