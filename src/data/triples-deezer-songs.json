@@ -1,0 +1,1200 @@
+{
+  "artist": {
+    "name": "tripleS",
+    "id": "7712602",
+    "deezerId": "7712602",
+    "fans": 8334,
+    "picture": "https://cdn-images.dzcdn.net/images/artist/510f00eea0eb838d04dd4d1c458bd460/250x250-000000-80-0-0.jpg"
+  },
+  "songs": [
+    {
+      "id": 1,
+      "title": "Generation",
+      "album": "Acid Angel from Asia <ACCESS>",
+      "releaseDate": "2022-10-28",
+      "deezerId": "2722449532",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/2/d/0/92d40cf10a730b2f0a11c74d5c389939.mp3?hdnea=exp=1748167653~acl=/api/1/1/9/2/d/0/92d40cf10a730b2f0a11c74d5c389939.mp3*~data=user_id=0,application_id=42~hmac=abda42f61f904155cb30d4d7f660274f9ceaaa65abd0831387a8715982668973",
+      "durationMs": 164000,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/332214b7872c53337fc8c1a078aec7ba/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/332214b7872c53337fc8c1a078aec7ba/500x500-000000-80-0-0.jpg",
+      "deezerRank": 407940,
+      "isrc": "KRA382208119"
+    },
+    {
+      "id": 2,
+      "title": "Rolex",
+      "album": "Acid Angel from Asia <ACCESS>",
+      "releaseDate": "2022-10-28",
+      "deezerId": "2722449542",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/6/6/9/0/669083d4fed303795abb11eb90a7e812.mp3?hdnea=exp=1748167653~acl=/api/1/1/6/6/9/0/669083d4fed303795abb11eb90a7e812.mp3*~data=user_id=0,application_id=42~hmac=66610d3ebf2b41a6e40edbf1ecaebc60a4d70aedbf3a51ec7aebe83fe5455776",
+      "durationMs": 192000,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/332214b7872c53337fc8c1a078aec7ba/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/332214b7872c53337fc8c1a078aec7ba/500x500-000000-80-0-0.jpg",
+      "deezerRank": 206411,
+      "isrc": "KRA382208120"
+    },
+    {
+      "id": 3,
+      "title": "찰나 (Charla)",
+      "album": "Acid Angel from Asia <ACCESS>",
+      "releaseDate": "2022-10-28",
+      "deezerId": "2722449552",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/4/7/3/0/4738562faeb3ebe5c08b0de9275f21fc.mp3?hdnea=exp=1748167653~acl=/api/1/1/4/7/3/0/4738562faeb3ebe5c08b0de9275f21fc.mp3*~data=user_id=0,application_id=42~hmac=fbaa589903d00710d1462e833903be4fed5fd3c525543f2b5350ceddc9423cb9",
+      "durationMs": 183000,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/332214b7872c53337fc8c1a078aec7ba/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/332214b7872c53337fc8c1a078aec7ba/500x500-000000-80-0-0.jpg",
+      "deezerRank": 172332,
+      "isrc": "KRA382208121"
+    },
+    {
+      "id": 4,
+      "title": "Dimension (AAA Ver.)",
+      "album": "Acid Angel from Asia <ACCESS>",
+      "releaseDate": "2022-10-28",
+      "deezerId": "2722449562",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/c/e/0/8ce032c18448f14055e2be67246b7ebe.mp3?hdnea=exp=1748167653~acl=/api/1/1/8/c/e/0/8ce032c18448f14055e2be67246b7ebe.mp3*~data=user_id=0,application_id=42~hmac=21c422805c4b261300482034286c5677e4810fee3d3fad4786d215c7d384ce53",
+      "durationMs": 191000,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/332214b7872c53337fc8c1a078aec7ba/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/332214b7872c53337fc8c1a078aec7ba/500x500-000000-80-0-0.jpg",
+      "deezerRank": 131361,
+      "isrc": "KRA382208122"
+    },
+    {
+      "id": 5,
+      "title": "Beam",
+      "album": "ASSEMBLE",
+      "releaseDate": "2023-02-13",
+      "deezerId": "2722453062",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/f/3/0/9f35a2c1616ec6dadd5d2311d90a3865.mp3?hdnea=exp=1748167652~acl=/api/1/1/9/f/3/0/9f35a2c1616ec6dadd5d2311d90a3865.mp3*~data=user_id=0,application_id=42~hmac=4b42788858255a6b03a66a99c3a44a6c0d25e5db22a34a6c6a829c0363e5ec8f",
+      "durationMs": 158000,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/381a13f4924eb7d6d600fb610560e1c5/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/381a13f4924eb7d6d600fb610560e1c5/500x500-000000-80-0-0.jpg",
+      "deezerRank": 218184,
+      "isrc": "KRA382300731"
+    },
+    {
+      "id": 6,
+      "title": "Rising",
+      "album": "ASSEMBLE",
+      "releaseDate": "2023-02-13",
+      "deezerId": "2722453082",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/5/0/3/0/503cec57e651cc4cb7f7bdec825bbbd2.mp3?hdnea=exp=1748167652~acl=/api/1/1/5/0/3/0/503cec57e651cc4cb7f7bdec825bbbd2.mp3*~data=user_id=0,application_id=42~hmac=79c2af3c1d68f9a6b438bb9f0f6d9fe5c862b627bf4707b45d63df17785a921e",
+      "durationMs": 159000,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/381a13f4924eb7d6d600fb610560e1c5/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/381a13f4924eb7d6d600fb610560e1c5/500x500-000000-80-0-0.jpg",
+      "deezerRank": 395854,
+      "isrc": "KRA382300733"
+    },
+    {
+      "id": 7,
+      "title": "Colorful",
+      "album": "ASSEMBLE",
+      "releaseDate": "2023-02-13",
+      "deezerId": "2722453092",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/1/5/d/0/15d5b51d8346a88a7bd5b566f017be40.mp3?hdnea=exp=1748167652~acl=/api/1/1/1/5/d/0/15d5b51d8346a88a7bd5b566f017be40.mp3*~data=user_id=0,application_id=42~hmac=f6a8f675df3d0b93bf548092834ec6a529a1853df6a647d8994907fa6d29237c",
+      "durationMs": 202000,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/381a13f4924eb7d6d600fb610560e1c5/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/381a13f4924eb7d6d600fb610560e1c5/500x500-000000-80-0-0.jpg",
+      "deezerRank": 148186,
+      "isrc": "KRA382300734"
+    },
+    {
+      "id": 8,
+      "title": "The Baddest",
+      "album": "ASSEMBLE",
+      "releaseDate": "2023-02-13",
+      "deezerId": "2722453102",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/e/5/e/0/e5e4d18b2da86b98432346fbd2369cba.mp3?hdnea=exp=1748167652~acl=/api/1/1/e/5/e/0/e5e4d18b2da86b98432346fbd2369cba.mp3*~data=user_id=0,application_id=42~hmac=5a8c46211c61c066b2a32d6c72e1b9d6823327a0ce6d9cb85205ea8edf383e5a",
+      "durationMs": 215000,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/381a13f4924eb7d6d600fb610560e1c5/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/381a13f4924eb7d6d600fb610560e1c5/500x500-000000-80-0-0.jpg",
+      "deezerRank": 146380,
+      "isrc": "KRA382300735"
+    },
+    {
+      "id": 9,
+      "title": "New Look",
+      "album": "ASSEMBLE",
+      "releaseDate": "2023-02-13",
+      "deezerId": "2722453112",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/e/e/5/0/ee5d90ed6c4070029fbdab4d250898d8.mp3?hdnea=exp=1748167652~acl=/api/1/1/e/e/5/0/ee5d90ed6c4070029fbdab4d250898d8.mp3*~data=user_id=0,application_id=42~hmac=64ee0fee4d5e7a13a915d6e008413b9311e0eb4e338def4fa1e9fbfbb9395c6d",
+      "durationMs": 208000,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/381a13f4924eb7d6d600fb610560e1c5/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/381a13f4924eb7d6d600fb610560e1c5/500x500-000000-80-0-0.jpg",
+      "deezerRank": 198443,
+      "isrc": "KRA382300736"
+    },
+    {
+      "id": 10,
+      "title": "Cherry Talk",
+      "album": "+(KR) ystal Eyes <AESTHETIC>",
+      "releaseDate": "2023-05-04",
+      "deezerId": "2722449122",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/e/0/0/0e09437d93b1eca3d1ad24a02245bbc9.mp3?hdnea=exp=1748167652~acl=/api/1/1/0/e/0/0/0e09437d93b1eca3d1ad24a02245bbc9.mp3*~data=user_id=0,application_id=42~hmac=a30da09554deaa177f6c89060f51f79a048c587fbc2f2f7751efd77d9610b46f",
+      "durationMs": 171000,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/8dd347637f37adac5511f4f12e688a46/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/8dd347637f37adac5511f4f12e688a46/500x500-000000-80-0-0.jpg",
+      "deezerRank": 197276,
+      "isrc": "KRA382302091"
+    },
+    {
+      "id": 11,
+      "title": "Touch",
+      "album": "+(KR) ystal Eyes <AESTHETIC>",
+      "releaseDate": "2023-05-04",
+      "deezerId": "2722449132",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/f/b/0/cfb72980645a714feef5f0179cf6f475.mp3?hdnea=exp=1748167652~acl=/api/1/1/c/f/b/0/cfb72980645a714feef5f0179cf6f475.mp3*~data=user_id=0,application_id=42~hmac=7b05e6645b46a3e5998617c74cc655631b6f1b485344094a04f5994193bc8b96",
+      "durationMs": 176000,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/8dd347637f37adac5511f4f12e688a46/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/8dd347637f37adac5511f4f12e688a46/500x500-000000-80-0-0.jpg",
+      "deezerRank": 164019,
+      "isrc": "KRA382302092"
+    },
+    {
+      "id": 12,
+      "title": "(숨겨 봐봐) Hide & Seek",
+      "album": "+(KR) ystal Eyes <AESTHETIC>",
+      "releaseDate": "2023-05-04",
+      "deezerId": "2722449142",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/b/d/0/2bdc214cc4fbfc2f669909086e11c101.mp3?hdnea=exp=1748167652~acl=/api/1/1/2/b/d/0/2bdc214cc4fbfc2f669909086e11c101.mp3*~data=user_id=0,application_id=42~hmac=95c8723585d68f4ffb0bce18936f90b2a4b79573876215f014ffb5c7329da8e1",
+      "durationMs": 174000,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/8dd347637f37adac5511f4f12e688a46/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/8dd347637f37adac5511f4f12e688a46/500x500-000000-80-0-0.jpg",
+      "deezerRank": 155614,
+      "isrc": "KRA382302093"
+    },
+    {
+      "id": 13,
+      "title": "Deja-Vu",
+      "album": "+(KR) ystal Eyes <AESTHETIC>",
+      "releaseDate": "2023-05-04",
+      "deezerId": "2722449152",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/7/2/e/0/72e5ffb655249290c01fbbdc2ebeddd9.mp3?hdnea=exp=1748167652~acl=/api/1/1/7/2/e/0/72e5ffb655249290c01fbbdc2ebeddd9.mp3*~data=user_id=0,application_id=42~hmac=bb9de1422b06ba46fae42b937c6accb851e0ecd6dc6ed50c22c40c4e96494b97",
+      "durationMs": 172000,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/8dd347637f37adac5511f4f12e688a46/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/8dd347637f37adac5511f4f12e688a46/500x500-000000-80-0-0.jpg",
+      "deezerRank": 115300,
+      "isrc": "KRA382302094"
+    },
+    {
+      "id": 14,
+      "title": "Dimension (KRE Ver.)",
+      "album": "+(KR) ystal Eyes <AESTHETIC>",
+      "releaseDate": "2023-05-04",
+      "deezerId": "2722449162",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/9/a/0/09a387134a693bdc825653671b8d7a1f.mp3?hdnea=exp=1748167652~acl=/api/1/1/0/9/a/0/09a387134a693bdc825653671b8d7a1f.mp3*~data=user_id=0,application_id=42~hmac=46ea11826d4cd8adc65843ca07a3b6498ea6c93ca03f23b1886bf4de4947acf9",
+      "durationMs": 183000,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/8dd347637f37adac5511f4f12e688a46/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/8dd347637f37adac5511f4f12e688a46/500x500-000000-80-0-0.jpg",
+      "deezerRank": 150495,
+      "isrc": "KRA382302095"
+    },
+    {
+      "id": 15,
+      "title": "Touch+",
+      "album": "+(KR) ystal Eyes <Touch+>",
+      "releaseDate": "2023-06-27",
+      "deezerId": "2722445092",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/d/e/0/8deeb36df06ea45b51e636c4eebc6166.mp3?hdnea=exp=1748167660~acl=/api/1/1/8/d/e/0/8deeb36df06ea45b51e636c4eebc6166.mp3*~data=user_id=0,application_id=42~hmac=1c5a7ec6f3be9292d86d8a5c96a9c5064c658a2064b6f3969b242088872ba369",
+      "durationMs": 188000,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/0b1400d678e95f634ec64d8d6d5d2f66/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/0b1400d678e95f634ec64d8d6d5d2f66/500x500-000000-80-0-0.jpg",
+      "deezerRank": 110661,
+      "isrc": "KRA382318296"
+    },
+    {
+      "id": 16,
+      "title": "Cherry Gene 'Hy-Fluid Mix'",
+      "album": "Acid Eyes <Cherry Gene>",
+      "releaseDate": "2023-07-06",
+      "deezerId": "2722445312",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/b/6/5/0/b65c93284c625a7f88aafeed4cddd7ba.mp3?hdnea=exp=1748167659~acl=/api/1/1/b/6/5/0/b65c93284c625a7f88aafeed4cddd7ba.mp3*~data=user_id=0,application_id=42~hmac=df4f2b7fbbf27edec2b14be10ffe9e0fe95541c2803d883f64edc793069d9930",
+      "durationMs": 142000,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/6e00c528e7c6af2cb2bf930eba2bb242/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/6e00c528e7c6af2cb2bf930eba2bb242/500x500-000000-80-0-0.jpg",
+      "deezerRank": 48886,
+      "isrc": "KRA382318410"
+    },
+    {
+      "id": 17,
+      "title": "Cherry Gene 'Testarossa Mix'",
+      "album": "Acid Eyes <Cherry Gene>",
+      "releaseDate": "2023-07-06",
+      "deezerId": "2722445322",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/a/0/9/0/a09e51efb255fe1367e927e1952333fb.mp3?hdnea=exp=1748167659~acl=/api/1/1/a/0/9/0/a09e51efb255fe1367e927e1952333fb.mp3*~data=user_id=0,application_id=42~hmac=34d10051dd2901135f8761c84f3c236d0c9521311d9bbc1dd1f170d478f9b38c",
+      "durationMs": 167000,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/6e00c528e7c6af2cb2bf930eba2bb242/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/6e00c528e7c6af2cb2bf930eba2bb242/500x500-000000-80-0-0.jpg",
+      "deezerRank": 56135,
+      "isrc": "KRA382318411"
+    },
+    {
+      "id": 18,
+      "title": "Girls' Capitalism",
+      "album": "LOVElution <ↀ>",
+      "releaseDate": "2023-08-17",
+      "deezerId": "2722514082",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/1/a/9/0/1a91b612c302a860db81720cfef19dfa.mp3?hdnea=exp=1748167651~acl=/api/1/1/1/a/9/0/1a91b612c302a860db81720cfef19dfa.mp3*~data=user_id=0,application_id=42~hmac=978b6d6084cb58034f91eeffb47071ff9cb41377cb25f7c6ddda98b0cf6c5c4a",
+      "durationMs": 218000,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/c7484c791cf0992398d92769876d03f7/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/c7484c791cf0992398d92769876d03f7/500x500-000000-80-0-0.jpg",
+      "deezerRank": 325995,
+      "isrc": "KRA382319996"
+    },
+    {
+      "id": 19,
+      "title": "복합성 (Complexity)",
+      "album": "LOVElution <ↀ>",
+      "releaseDate": "2023-08-17",
+      "deezerId": "2722514092",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/a/6/6/0/a664defc99a045b3b74d1ed33f985bc8.mp3?hdnea=exp=1748167651~acl=/api/1/1/a/6/6/0/a664defc99a045b3b74d1ed33f985bc8.mp3*~data=user_id=0,application_id=42~hmac=d1ccd3f39793b2c1606a4f0412415fffff1e70c2a75c66516b42b739cd1938ba",
+      "durationMs": 158000,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/c7484c791cf0992398d92769876d03f7/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/c7484c791cf0992398d92769876d03f7/500x500-000000-80-0-0.jpg",
+      "deezerRank": 149863,
+      "isrc": "KRA382319997"
+    },
+    {
+      "id": 20,
+      "title": "Black Soul Dress",
+      "album": "LOVElution <ↀ>",
+      "releaseDate": "2023-08-17",
+      "deezerId": "2722514102",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/2/3/0/923c588ab3e941604f57a71b7092d9e7.mp3?hdnea=exp=1748167651~acl=/api/1/1/9/2/3/0/923c588ab3e941604f57a71b7092d9e7.mp3*~data=user_id=0,application_id=42~hmac=442d5ee7ac778cfc8cb88540a830af8e4689641597c2d791c91fbe184d760b37",
+      "durationMs": 216000,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/c7484c791cf0992398d92769876d03f7/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/c7484c791cf0992398d92769876d03f7/500x500-000000-80-0-0.jpg",
+      "deezerRank": 144148,
+      "isrc": "KRA382319998"
+    },
+    {
+      "id": 21,
+      "title": "Seoul Sonyo Sound",
+      "album": "LOVElution <ↀ>",
+      "releaseDate": "2023-08-17",
+      "deezerId": "2722514112",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/1/d/a/0/1da16060e97e3ca3bde58b56afc41581.mp3?hdnea=exp=1748167651~acl=/api/1/1/1/d/a/0/1da16060e97e3ca3bde58b56afc41581.mp3*~data=user_id=0,application_id=42~hmac=e03f2c7041a9a279b2971754a98b66fc18c522b60c39110852467cd44dc8b615",
+      "durationMs": 150000,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/c7484c791cf0992398d92769876d03f7/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/c7484c791cf0992398d92769876d03f7/500x500-000000-80-0-0.jpg",
+      "deezerRank": 173338,
+      "isrc": "KRA382319999"
+    },
+    {
+      "id": 22,
+      "title": "Cry Baby",
+      "album": "LOVElution <ↀ>",
+      "releaseDate": "2023-08-17",
+      "deezerId": "2722514122",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/a/6/0/3a68e8b11ff9a17db2715404979a8334.mp3?hdnea=exp=1748167651~acl=/api/1/1/3/a/6/0/3a68e8b11ff9a17db2715404979a8334.mp3*~data=user_id=0,application_id=42~hmac=591192d64cae4091b5403b8f08b6d3c89a9e031c9177086b9a303cc8d6f39308",
+      "durationMs": 157000,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/c7484c791cf0992398d92769876d03f7/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/c7484c791cf0992398d92769876d03f7/500x500-000000-80-0-0.jpg",
+      "deezerRank": 125474,
+      "isrc": "KRA382320000"
+    },
+    {
+      "id": 23,
+      "title": "Speed Love",
+      "album": "LOVElution <ↀ>",
+      "releaseDate": "2023-08-17",
+      "deezerId": "2722514132",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/3/f/0/03fbf07014462a20ef8400e11ccf8bf0.mp3?hdnea=exp=1748167651~acl=/api/1/1/0/3/f/0/03fbf07014462a20ef8400e11ccf8bf0.mp3*~data=user_id=0,application_id=42~hmac=794669a9e14c6d408a3c5fac7a04f21db54f4edd44942f7ac294f0ade1fd09ba",
+      "durationMs": 148000,
+      "explicit": false,
+      "trackNumber": 7,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/c7484c791cf0992398d92769876d03f7/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/c7484c791cf0992398d92769876d03f7/500x500-000000-80-0-0.jpg",
+      "deezerRank": 134536,
+      "isrc": "KRA382320001"
+    },
+    {
+      "id": 24,
+      "title": "Invincible",
+      "album": "EVOLution <⟡>",
+      "releaseDate": "2023-10-11",
+      "deezerId": "2722453452",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/6/c/5/0/6c5c9cc5c0758222139bd24ce18fe881.mp3?hdnea=exp=1748167651~acl=/api/1/1/6/c/5/0/6c5c9cc5c0758222139bd24ce18fe881.mp3*~data=user_id=0,application_id=42~hmac=9e97f6e0e9b663952da41e3e6d4d764be188fa49d1a63ca49292d23269b8ba35",
+      "durationMs": 197000,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/7f224fe936b9824c2cad4796a7ccd434/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/7f224fe936b9824c2cad4796a7ccd434/500x500-000000-80-0-0.jpg",
+      "deezerRank": 212924,
+      "isrc": "KRA382320952"
+    },
+    {
+      "id": 25,
+      "title": "Rhodanthe",
+      "album": "EVOLution <⟡>",
+      "releaseDate": "2023-10-11",
+      "deezerId": "2722453462",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/f/3/b/0/f3bcc76186263e0438b1b5ed57212ab9.mp3?hdnea=exp=1748167651~acl=/api/1/1/f/3/b/0/f3bcc76186263e0438b1b5ed57212ab9.mp3*~data=user_id=0,application_id=42~hmac=a5fa72805e37428d867998771fcabd36f11b44d8f11a7a40250887cfd18ef9c3",
+      "durationMs": 227000,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/7f224fe936b9824c2cad4796a7ccd434/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/7f224fe936b9824c2cad4796a7ccd434/500x500-000000-80-0-0.jpg",
+      "deezerRank": 125555,
+      "isrc": "KRA382320953"
+    },
+    {
+      "id": 26,
+      "title": "Heavy Metal Wings",
+      "album": "EVOLution <⟡>",
+      "releaseDate": "2023-10-11",
+      "deezerId": "2722453472",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/0/7/0/307fc51ada505b93e0410b670e2de1dc.mp3?hdnea=exp=1748167651~acl=/api/1/1/3/0/7/0/307fc51ada505b93e0410b670e2de1dc.mp3*~data=user_id=0,application_id=42~hmac=e410d3a88141683427d6b2e98703d1bf950798aca83e20e8c37164d539f48829",
+      "durationMs": 195000,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/7f224fe936b9824c2cad4796a7ccd434/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/7f224fe936b9824c2cad4796a7ccd434/500x500-000000-80-0-0.jpg",
+      "deezerRank": 185876,
+      "isrc": "KRA382320954"
+    },
+    {
+      "id": 27,
+      "title": "미열 37.5",
+      "album": "EVOLution <⟡>",
+      "releaseDate": "2023-10-11",
+      "deezerId": "2722453482",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/2/e/0/c2ec4facf7d70198a4953bcfa7da974a.mp3?hdnea=exp=1748167651~acl=/api/1/1/c/2/e/0/c2ec4facf7d70198a4953bcfa7da974a.mp3*~data=user_id=0,application_id=42~hmac=3ff892f8f370f4d4cbeb5cb7d5c76e2c56af82b102584911d8822c1f3e922a88",
+      "durationMs": 221000,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/7f224fe936b9824c2cad4796a7ccd434/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/7f224fe936b9824c2cad4796a7ccd434/500x500-000000-80-0-0.jpg",
+      "deezerRank": 173743,
+      "isrc": "KRA382320955"
+    },
+    {
+      "id": 28,
+      "title": "Moto Princess",
+      "album": "EVOLution <⟡>",
+      "releaseDate": "2023-10-11",
+      "deezerId": "2722453492",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/d/6/0/8d6a59fb4979072d969b9f3742d526ef.mp3?hdnea=exp=1748167651~acl=/api/1/1/8/d/6/0/8d6a59fb4979072d969b9f3742d526ef.mp3*~data=user_id=0,application_id=42~hmac=fb1511747212e13bb43998d54b8a13f5be8034fb78838d445821ebc8f022972d",
+      "durationMs": 194000,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/7f224fe936b9824c2cad4796a7ccd434/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/7f224fe936b9824c2cad4796a7ccd434/500x500-000000-80-0-0.jpg",
+      "deezerRank": 186799,
+      "isrc": "KRA382320956"
+    },
+    {
+      "id": 29,
+      "title": "Oui",
+      "album": "EVOLution <⟡>",
+      "releaseDate": "2023-10-11",
+      "deezerId": "2722453502",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/6/b/f/0/6bff8297ba26b24851b58393614ffbd3.mp3?hdnea=exp=1748167651~acl=/api/1/1/6/b/f/0/6bff8297ba26b24851b58393614ffbd3.mp3*~data=user_id=0,application_id=42~hmac=6f05fe06b47290e7e41d85cdb1769a3179cb12e1524d00e06ce84dba390a9711",
+      "durationMs": 159000,
+      "explicit": false,
+      "trackNumber": 7,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/7f224fe936b9824c2cad4796a7ccd434/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/7f224fe936b9824c2cad4796a7ccd434/500x500-000000-80-0-0.jpg",
+      "deezerRank": 101719,
+      "isrc": "KRA382320957"
+    },
+    {
+      "id": 30,
+      "title": "Just Do It",
+      "album": "NXT <Just Do It>",
+      "releaseDate": "2023-12-23",
+      "deezerId": "2722445282",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/4/7/a/0/47a2fb051e1036698303f292a93fc3a5.mp3?hdnea=exp=1748167658~acl=/api/1/1/4/7/a/0/47a2fb051e1036698303f292a93fc3a5.mp3*~data=user_id=0,application_id=42~hmac=ec6ede709e000468457c4ec88d78facce84bcf4416ea4426f102624b57c4d36a",
+      "durationMs": 153000,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/c13beb92f5afddaef1d680f55fe762eb/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/c13beb92f5afddaef1d680f55fe762eb/500x500-000000-80-0-0.jpg",
+      "deezerRank": 137653,
+      "isrc": "KRA382322672"
+    },
+    {
+      "id": 31,
+      "title": "Door",
+      "album": "Aria <Structure Of Sadness>",
+      "releaseDate": "2024-01-15",
+      "deezerId": "2722445262",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/1/4/0/2140986a9161cfff3f6dc3459376856e.mp3?hdnea=exp=1748167658~acl=/api/1/1/2/1/4/0/2140986a9161cfff3f6dc3459376856e.mp3*~data=user_id=0,application_id=42~hmac=39194c9a53e12ef159cde0c4d118feac807038630a8bd034cb53b091179a09f5",
+      "durationMs": 188000,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/d214575e9e9e6de83aaa8928a89a371b/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/d214575e9e9e6de83aaa8928a89a371b/500x500-000000-80-0-0.jpg",
+      "deezerRank": 154255,
+      "isrc": "KRA382400160"
+    },
+    {
+      "id": 32,
+      "title": "첫 이별 (Farewell My First)",
+      "album": "Aria <Structure Of Sadness>",
+      "releaseDate": "2024-01-15",
+      "deezerId": "2722445272",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/c/6/0/2c6410c310ca756a5935531f12cad130.mp3?hdnea=exp=1748167658~acl=/api/1/1/2/c/6/0/2c6410c310ca756a5935531f12cad130.mp3*~data=user_id=0,application_id=42~hmac=e2b8ae4280f7fbd9a26b2e6c7e974d8770f04316519ea749fe342eeb8f19577a",
+      "durationMs": 209000,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/d214575e9e9e6de83aaa8928a89a371b/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/d214575e9e9e6de83aaa8928a89a371b/500x500-000000-80-0-0.jpg",
+      "deezerRank": 60058,
+      "isrc": "KRA382400161"
+    },
+    {
+      "id": 33,
+      "title": "Girls Never Die",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "deezerId": "2789230942",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/e/b/0/8ebf259db5efaed4591fd934198dd360.mp3?hdnea=exp=1748167649~acl=/api/1/1/8/e/b/0/8ebf259db5efaed4591fd934198dd360.mp3*~data=user_id=0,application_id=42~hmac=cc7175eb2ccdae255d3fabb23e025d2e5997e31a9d8c5f902d7fe675a7af220a",
+      "durationMs": 187000,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/500x500-000000-80-0-0.jpg",
+      "deezerRank": 517297,
+      "isrc": "KRA382402695"
+    },
+    {
+      "id": 34,
+      "title": "Heart Raider",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "deezerId": "2789230952",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/b/c/0/2bc3f300910a00c43d88004f8d2c123b.mp3?hdnea=exp=1748167649~acl=/api/1/1/2/b/c/0/2bc3f300910a00c43d88004f8d2c123b.mp3*~data=user_id=0,application_id=42~hmac=100ac1c2893c04807615207478839ab94c93f61721bca0438096657b10b5ebf1",
+      "durationMs": 179000,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/500x500-000000-80-0-0.jpg",
+      "deezerRank": 152839,
+      "isrc": "KRA382402696"
+    },
+    {
+      "id": 35,
+      "title": "Midnight Flower",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "deezerId": "2789230962",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/7/0/c/0/70c25e8610c801d77bd1166beac566bf.mp3?hdnea=exp=1748167649~acl=/api/1/1/7/0/c/0/70c25e8610c801d77bd1166beac566bf.mp3*~data=user_id=0,application_id=42~hmac=3883a5f584087c7bc5d8f869d8cc0d8c66d3d1629a43e02ef14a2b2fe85bbb49",
+      "durationMs": 166000,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/500x500-000000-80-0-0.jpg",
+      "deezerRank": 151103,
+      "isrc": "KRA382402697"
+    },
+    {
+      "id": 36,
+      "title": "White Soul Sneakers",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "deezerId": "2789230972",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/5/8/4/0/58403e656d2e0cca5d36289d13628837.mp3?hdnea=exp=1748167649~acl=/api/1/1/5/8/4/0/58403e656d2e0cca5d36289d13628837.mp3*~data=user_id=0,application_id=42~hmac=95819b2bc5fa0b68b5040de9908a335ad9be0805cc659c24fe268ae5d380de49",
+      "durationMs": 183000,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/500x500-000000-80-0-0.jpg",
+      "deezerRank": 169996,
+      "isrc": "KRA382402698"
+    },
+    {
+      "id": 37,
+      "title": "Chiyu",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "deezerId": "2789230982",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/c/d/0/2cd6370dcf0f68307f3b5dc5592aeb24.mp3?hdnea=exp=1748167649~acl=/api/1/1/2/c/d/0/2cd6370dcf0f68307f3b5dc5592aeb24.mp3*~data=user_id=0,application_id=42~hmac=4d4ac14021e559dee19b81d02352159a403ed10f159ff3fefc126578bea1ce7b",
+      "durationMs": 170000,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/500x500-000000-80-0-0.jpg",
+      "deezerRank": 231673,
+      "isrc": "KRA382402699"
+    },
+    {
+      "id": 38,
+      "title": "24",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "deezerId": "2789230992",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/a/5/a/0/a5a711f1cfd45501583400709a468cf9.mp3?hdnea=exp=1748167649~acl=/api/1/1/a/5/a/0/a5a711f1cfd45501583400709a468cf9.mp3*~data=user_id=0,application_id=42~hmac=2c3f865040310ac90821136ea7d4e438ad431f592d5e4d3775d12a6a9b61e582",
+      "durationMs": 153000,
+      "explicit": false,
+      "trackNumber": 7,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/500x500-000000-80-0-0.jpg",
+      "deezerRank": 240245,
+      "isrc": "KRA382402700"
+    },
+    {
+      "id": 39,
+      "title": "Beyond the Beyond",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "deezerId": "2789231002",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/f/6/2/0/f624bce54eaf126ac697c76607cd6863.mp3?hdnea=exp=1748167649~acl=/api/1/1/f/6/2/0/f624bce54eaf126ac697c76607cd6863.mp3*~data=user_id=0,application_id=42~hmac=baa7736084a4824af20ef1b53f162c766faef2df44f005c0c2956b8fe3198ee0",
+      "durationMs": 182000,
+      "explicit": false,
+      "trackNumber": 8,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/500x500-000000-80-0-0.jpg",
+      "deezerRank": 144053,
+      "isrc": "KRA382402701"
+    },
+    {
+      "id": 40,
+      "title": "Non Scale",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "deezerId": "2789231012",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/1/7/0/0177a4977428c508b9859bdae36647c0.mp3?hdnea=exp=1748167649~acl=/api/1/1/0/1/7/0/0177a4977428c508b9859bdae36647c0.mp3*~data=user_id=0,application_id=42~hmac=3ca8e0030f4a4212835ea9049ee914e81762c364166c0358f6e20c893c930297",
+      "durationMs": 206000,
+      "explicit": false,
+      "trackNumber": 9,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/500x500-000000-80-0-0.jpg",
+      "deezerRank": 145044,
+      "isrc": "KRA382402702"
+    },
+    {
+      "id": 41,
+      "title": "Dimension",
+      "album": "<ASSEMBLE24>",
+      "releaseDate": "2024-05-08",
+      "deezerId": "2789231022",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/4/e/3/0/4e3b86d3919cce9ee102e74421d346bf.mp3?hdnea=exp=1748167649~acl=/api/1/1/4/e/3/0/4e3b86d3919cce9ee102e74421d346bf.mp3*~data=user_id=0,application_id=42~hmac=a04e31554f16d65623af965840ad341b90b0bdcc940a048486328b9c95c57931",
+      "durationMs": 197000,
+      "explicit": false,
+      "trackNumber": 10,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/1b38fc54c329156035eaee71ad72821f/500x500-000000-80-0-0.jpg",
+      "deezerRank": 164171,
+      "isrc": "KRA382402703"
+    },
+    {
+      "id": 42,
+      "title": "Inner Dance",
+      "album": "Glow <Inner Dance>",
+      "releaseDate": "2024-06-21",
+      "deezerId": "2844692902",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/d/5/0/cd53d647d4bd127530b8799664533847.mp3?hdnea=exp=1748167657~acl=/api/1/1/c/d/5/0/cd53d647d4bd127530b8799664533847.mp3*~data=user_id=0,application_id=42~hmac=eb93b6177416b5aa54e5a3e1f260ac93592e5f92a4ecb9e283d7437014c80291",
+      "durationMs": 181000,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/bfafd4fe838686c9b2a9f1a46bd60073/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/bfafd4fe838686c9b2a9f1a46bd60073/500x500-000000-80-0-0.jpg",
+      "deezerRank": 226122,
+      "isrc": "KRA382403742"
+    },
+    {
+      "id": 43,
+      "title": "Hit the Floor",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "deezerId": "3039714651",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/b/2/0/3b2ad63539cdc0d6d864bfada17ccfe0.mp3?hdnea=exp=1748167649~acl=/api/1/1/3/b/2/0/3b2ad63539cdc0d6d864bfada17ccfe0.mp3*~data=user_id=0,application_id=42~hmac=d14e4ac2b8be451c0c84a010ba443ed0c91bf8e2071b91b4dcb493cebf61b2a4",
+      "durationMs": 177000,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/500x500-000000-80-0-0.jpg",
+      "deezerRank": 279177,
+      "isrc": "KRA382405898"
+    },
+    {
+      "id": 44,
+      "title": "Choom",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "deezerId": "3039714661",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/e/b/b/0/ebb699b2bda5add324e7ebc927122848.mp3?hdnea=exp=1748167649~acl=/api/1/1/e/b/b/0/ebb699b2bda5add324e7ebc927122848.mp3*~data=user_id=0,application_id=42~hmac=905f5eb914c4b952acc81a34d8459536ba19c589458176aa63c8161e6557f0aa",
+      "durationMs": 191000,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/500x500-000000-80-0-0.jpg",
+      "deezerRank": 162410,
+      "isrc": "KRA382405899"
+    },
+    {
+      "id": 45,
+      "title": "Éclair",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "deezerId": "3039714671",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/4/a/0/84aba4fa61b05d5e74f0051e2db72c10.mp3?hdnea=exp=1748167649~acl=/api/1/1/8/4/a/0/84aba4fa61b05d5e74f0051e2db72c10.mp3*~data=user_id=0,application_id=42~hmac=10de4ee16da899b2e4cb8acf0d325a8554ff58a56da121c0a7540d46c6af865a",
+      "durationMs": 169000,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/500x500-000000-80-0-0.jpg",
+      "deezerRank": 152726,
+      "isrc": "KRA382405900"
+    },
+    {
+      "id": 46,
+      "title": "연애소설 (Love Soseol)",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "deezerId": "3039714681",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/7/0/8/0/7087aedc12729a458d5ba338c225c682.mp3?hdnea=exp=1748167649~acl=/api/1/1/7/0/8/0/7087aedc12729a458d5ba338c225c682.mp3*~data=user_id=0,application_id=42~hmac=b8f22cede985d37f74100e6fed7d5e057f4569a68fae15758d96643293dec717",
+      "durationMs": 178000,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/500x500-000000-80-0-0.jpg",
+      "deezerRank": 120667,
+      "isrc": "KRA382405901"
+    },
+    {
+      "id": 47,
+      "title": "Atmosphere (VV Ver.)",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "deezerId": "3039714691",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/f/1/5/0/f158b1590cb95a04b4aa68a6e7f09909.mp3?hdnea=exp=1748167649~acl=/api/1/1/f/1/5/0/f158b1590cb95a04b4aa68a6e7f09909.mp3*~data=user_id=0,application_id=42~hmac=745d0539b35e3f8b7d187d4efc0aab660369187c6bb9ee409dcfb5ddb2a515a0",
+      "durationMs": 157000,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/500x500-000000-80-0-0.jpg",
+      "deezerRank": 121153,
+      "isrc": "KRA382405902"
+    },
+    {
+      "id": 48,
+      "title": "12 Rings",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "deezerId": "3039714701",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/b/0/c/0/b0ce78dcdf4418eb0e6ad2ece9ebb613.mp3?hdnea=exp=1748167649~acl=/api/1/1/b/0/c/0/b0ce78dcdf4418eb0e6ad2ece9ebb613.mp3*~data=user_id=0,application_id=42~hmac=42d091bf3749c37000afdc3e0828cfe43ac9fda1281356a068794a11841a99d9",
+      "durationMs": 200000,
+      "explicit": false,
+      "trackNumber": 7,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/500x500-000000-80-0-0.jpg",
+      "deezerRank": 96187,
+      "isrc": "KRA382405903"
+    },
+    {
+      "id": 49,
+      "title": "Vision",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "deezerId": "3039714711",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/f/6/a/0/f6a25ee92557643d2c7490d2354ebd3e.mp3?hdnea=exp=1748167649~acl=/api/1/1/f/6/a/0/f6a25ee92557643d2c7490d2354ebd3e.mp3*~data=user_id=0,application_id=42~hmac=cbd1d66ba77edc2d69cfbc64a0924be24321fd497ebfb365a403bc6ef032c1b6",
+      "durationMs": 167000,
+      "explicit": false,
+      "trackNumber": 8,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/500x500-000000-80-0-0.jpg",
+      "deezerRank": 111082,
+      "isrc": "KRA382405904"
+    },
+    {
+      "id": 50,
+      "title": "Bionic Power",
+      "album": "Visionary Vision <Performante>",
+      "releaseDate": "2024-10-23",
+      "deezerId": "3039714721",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/d/7/0/0d7ea280877d197ea4c5838220a59ed8.mp3?hdnea=exp=1748167649~acl=/api/1/1/0/d/7/0/0d7ea280877d197ea4c5838220a59ed8.mp3*~data=user_id=0,application_id=42~hmac=232efaf4887d29271796d6d6e0723c5d5e22ab37b808412f9bdd39e9465f09d6",
+      "durationMs": 152000,
+      "explicit": false,
+      "trackNumber": 9,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/a24662ce65f8b6fe8809d3b904fd1ed9/500x500-000000-80-0-0.jpg",
+      "deezerRank": 113437,
+      "isrc": "KRA382405905"
+    },
+    {
+      "id": 51,
+      "title": "Untitled",
+      "album": "tripleS hatch! <Untitled>",
+      "releaseDate": "2024-11-20",
+      "deezerId": "3075554401",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/b/7/0/0b7e4b70514d71514c0b4623a0d6ac41.mp3?hdnea=exp=1748167655~acl=/api/1/1/0/b/7/0/0b7e4b70514d71514c0b4623a0d6ac41.mp3*~data=user_id=0,application_id=42~hmac=506383603c451f86a1dfe51f7722dfe80098d3cbe9c9d9fa3a07894bac6181aa",
+      "durationMs": 161000,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/1e28d297f270cc0e9ddabbd96d7f3d15/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/1e28d297f270cc0e9ddabbd96d7f3d15/500x500-000000-80-0-0.jpg",
+      "deezerRank": 164596,
+      "isrc": "KRMIM2469403"
+    },
+    {
+      "id": 52,
+      "title": "### (hatch! Version)",
+      "album": "tripleS hatch! <Untitled>",
+      "releaseDate": "2024-11-20",
+      "deezerId": "3075554411",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/f/7/e/0/f7ef16f3645182d273302b977fbb27d1.mp3?hdnea=exp=1748167655~acl=/api/1/1/f/7/e/0/f7ef16f3645182d273302b977fbb27d1.mp3*~data=user_id=0,application_id=42~hmac=9f5e2a3d38ff28a134855380b55a2cec8052548a71d233092e1ccd394e88c536",
+      "durationMs": 189000,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/1e28d297f270cc0e9ddabbd96d7f3d15/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/1e28d297f270cc0e9ddabbd96d7f3d15/500x500-000000-80-0-0.jpg",
+      "deezerRank": 87409,
+      "isrc": "KRMIM2469404"
+    },
+    {
+      "id": 53,
+      "title": "###",
+      "album": "tripleS hatch! <Untitled>",
+      "releaseDate": "2024-11-20",
+      "deezerId": "3075554421",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/e/9/e/0/e9ec5738eeaec8c7e18b8b84d3d71418.mp3?hdnea=exp=1748167655~acl=/api/1/1/e/9/e/0/e9ec5738eeaec8c7e18b8b84d3d71418.mp3*~data=user_id=0,application_id=42~hmac=b289e6ad644faad7e33894d98bdf82e28254a181cc1cd6b6b5b9fca9a5199992",
+      "durationMs": 189000,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/1e28d297f270cc0e9ddabbd96d7f3d15/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/1e28d297f270cc0e9ddabbd96d7f3d15/500x500-000000-80-0-0.jpg",
+      "deezerRank": 76401,
+      "isrc": "KRMIM2449289"
+    },
+    {
+      "id": 54,
+      "title": "Dreaming (by YooYeon, YuBin, DaHyun, ShiOn)",
+      "album": "Dreaming (Shooting Stars X tripleS)",
+      "releaseDate": "2024-11-26",
+      "deezerId": "3112030661",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/6/5/0/36565caf5e1cb4158598c623445d745f.mp3?hdnea=exp=1748167655~acl=/api/1/1/3/6/5/0/36565caf5e1cb4158598c623445d745f.mp3*~data=user_id=0,application_id=42~hmac=0470a1e07642825cd1fabaedc803a85fe33455c3fc8b5b809727500c9108c817",
+      "durationMs": 186000,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/dc7b0d1748f8bd618dac7a90b9cb7f1c/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/dc7b0d1748f8bd618dac7a90b9cb7f1c/500x500-000000-80-0-0.jpg",
+      "deezerRank": 60679,
+      "isrc": "KRA382406474"
+    },
+    {
+      "id": 55,
+      "title": "Girls Never Die -Japanese Version-",
+      "album": "Girls Never Die -Japanese Version-",
+      "releaseDate": "2025-04-12",
+      "deezerId": "3310625551",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/a/b/f/0/abfee249fe1c56934e8dacade9715e7b.mp3?hdnea=exp=1748167654~acl=/api/1/1/a/b/f/0/abfee249fe1c56934e8dacade9715e7b.mp3*~data=user_id=0,application_id=42~hmac=f978a4263ae6ca4f86855d598d3d70cc1a5df64df4d917a3a4bf19c2787d980a",
+      "durationMs": 208000,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/9aecca4a378781ef965d195035801d99/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/9aecca4a378781ef965d195035801d99/500x500-000000-80-0-0.jpg",
+      "deezerRank": 78266,
+      "isrc": "KRMIM2518150"
+    },
+    {
+      "id": 56,
+      "title": "Rising -Japanese Version-",
+      "album": "Rising -Japanese Version-",
+      "releaseDate": "2025-04-12",
+      "deezerId": "3310414691",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/e/c/0/9ec85dbfce513a0bf0a4f47bbba40f6f.mp3?hdnea=exp=1748167654~acl=/api/1/1/9/e/c/0/9ec85dbfce513a0bf0a4f47bbba40f6f.mp3*~data=user_id=0,application_id=42~hmac=647564183331807f23a1b510948bb63c78628ca94bfca7422be01a3396a81372",
+      "durationMs": 157000,
+      "explicit": false,
+      "trackNumber": 1,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/2d4077fea064f6dacf9cdb3ad8907b34/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/2d4077fea064f6dacf9cdb3ad8907b34/500x500-000000-80-0-0.jpg",
+      "deezerRank": 76262,
+      "isrc": "KRMIM2518151"
+    },
+    {
+      "id": 57,
+      "title": "깨어 (Are You Alive)",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "deezerId": "3334081191",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/b/5/2/0/b52377425920beca6ac15f6ee03065c7.mp3?hdnea=exp=1748167647~acl=/api/1/1/b/5/2/0/b52377425920beca6ac15f6ee03065c7.mp3*~data=user_id=0,application_id=42~hmac=8746b007893d5d1def1bbfb67ee293fad61c58366bfd2085fbfc37f0619c68dd",
+      "durationMs": 186000,
+      "explicit": false,
+      "trackNumber": 2,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/500x500-000000-80-0-0.jpg",
+      "deezerRank": 581148,
+      "isrc": "KRA382502609"
+    },
+    {
+      "id": 58,
+      "title": "추리소설 (Detective Soseol)",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "deezerId": "3334081201",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/2/a/0/22a3fce5062fe6e5b3b65c8a4c901943.mp3?hdnea=exp=1748167647~acl=/api/1/1/2/2/a/0/22a3fce5062fe6e5b3b65c8a4c901943.mp3*~data=user_id=0,application_id=42~hmac=9a584983be26aefa659a138b2afb4f95ac4f7b39c158097e136314e84ecc143f",
+      "durationMs": 200000,
+      "explicit": false,
+      "trackNumber": 3,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/500x500-000000-80-0-0.jpg",
+      "deezerRank": 409201,
+      "isrc": "KRA382502610"
+    },
+    {
+      "id": 59,
+      "title": "어제 우리 불꽃놀이 (Firework Diary)",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "deezerId": "3334081211",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/a/1/0/8a19b9878e9609111d7ef5457099c623.mp3?hdnea=exp=1748167647~acl=/api/1/1/8/a/1/0/8a19b9878e9609111d7ef5457099c623.mp3*~data=user_id=0,application_id=42~hmac=e9117c9d804ae30263b8ad1ea41f9fa16e23641bcbdff8e58a1995695177725b",
+      "durationMs": 188000,
+      "explicit": false,
+      "trackNumber": 4,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/500x500-000000-80-0-0.jpg",
+      "deezerRank": 398623,
+      "isrc": "KRA382502611"
+    },
+    {
+      "id": 60,
+      "title": "Love Child",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "deezerId": "3334081221",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/6/0/9/0/6091e7d577133a0ef3bdb75b522a4ae0.mp3?hdnea=exp=1748167647~acl=/api/1/1/6/0/9/0/6091e7d577133a0ef3bdb75b522a4ae0.mp3*~data=user_id=0,application_id=42~hmac=c7169403e1b7114025095569bac1c95f949755845b1136efebfd763f163d8552",
+      "durationMs": 181000,
+      "explicit": false,
+      "trackNumber": 5,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/500x500-000000-80-0-0.jpg",
+      "deezerRank": 400540,
+      "isrc": "KRA382502612"
+    },
+    {
+      "id": 61,
+      "title": "Persona",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "deezerId": "3334081231",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/5/b/0/0/5b00a73b0bd0be5388852430bec2cd64.mp3?hdnea=exp=1748167647~acl=/api/1/1/5/b/0/0/5b00a73b0bd0be5388852430bec2cd64.mp3*~data=user_id=0,application_id=42~hmac=3fea1626317ed1baf88730d40a9414b06a5c077ee603b999c28aef17aa55320f",
+      "durationMs": 182000,
+      "explicit": false,
+      "trackNumber": 6,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/500x500-000000-80-0-0.jpg",
+      "deezerRank": 393477,
+      "isrc": "KRA382502613"
+    },
+    {
+      "id": 62,
+      "title": "Too Hot",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "deezerId": "3334081241",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/d/3/0/cd3253069daa8f3020630c281db0564f.mp3?hdnea=exp=1748167647~acl=/api/1/1/c/d/3/0/cd3253069daa8f3020630c281db0564f.mp3*~data=user_id=0,application_id=42~hmac=bed20674d6fd6e75ef3debf7310b93b291cf7c475d74b7ac66b9ba83e716effa",
+      "durationMs": 201000,
+      "explicit": false,
+      "trackNumber": 7,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/500x500-000000-80-0-0.jpg",
+      "deezerRank": 386838,
+      "isrc": "KRA382502614"
+    },
+    {
+      "id": 63,
+      "title": "Diablo",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "deezerId": "3334081251",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/d/7/3/0/d73337ff1c6aabb836292c01d9ed08df.mp3?hdnea=exp=1748167647~acl=/api/1/1/d/7/3/0/d73337ff1c6aabb836292c01d9ed08df.mp3*~data=user_id=0,application_id=42~hmac=3b41e8545e3b0621d4f244037293bc4e838fe15bf400d619dc284195a2db668e",
+      "durationMs": 200000,
+      "explicit": false,
+      "trackNumber": 8,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/500x500-000000-80-0-0.jpg",
+      "deezerRank": 418026,
+      "isrc": "KRA382502615"
+    },
+    {
+      "id": 64,
+      "title": "Friend Zone",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "deezerId": "3334081261",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/5/b/7/0/5b7d53629a05234bce1b576c9e8b35cf.mp3?hdnea=exp=1748167647~acl=/api/1/1/5/b/7/0/5b7d53629a05234bce1b576c9e8b35cf.mp3*~data=user_id=0,application_id=42~hmac=101d1799ec0cf5565c8ce54f173308d366fc327d43145034b16436ca4cbead2c",
+      "durationMs": 197000,
+      "explicit": false,
+      "trackNumber": 9,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/500x500-000000-80-0-0.jpg",
+      "deezerRank": 357285,
+      "isrc": "KRA382502616"
+    },
+    {
+      "id": 65,
+      "title": "Love2Love",
+      "album": "<ASSEMBLE25>",
+      "releaseDate": "2025-05-12",
+      "deezerId": "3334081271",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/a/8/0/0a828298e6f41e2e8a708ce47ab547ae.mp3?hdnea=exp=1748167647~acl=/api/1/1/0/a/8/0/0a828298e6f41e2e8a708ce47ab547ae.mp3*~data=user_id=0,application_id=42~hmac=da40713a6e53d9b207e9850bda430c48cc6b8e41299b8f2d308348b6c1dc3741",
+      "durationMs": 190000,
+      "explicit": false,
+      "trackNumber": 10,
+      "artists": [
+        "tripleS"
+      ],
+      "albumCover": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/250x250-000000-80-0-0.jpg",
+      "albumCoverBig": "https://cdn-images.dzcdn.net/images/cover/d92a4f8f243b7b30966a03d31a19ef6d/500x500-000000-80-0-0.jpg",
+      "deezerRank": 365447,
+      "isrc": "KRA382502617"
+    }
+  ],
+  "totalSongs": 65,
+  "fetchedAt": "2025-05-25T09:52:40.495Z",
+  "source": "Deezer",
+  "filterOptions": {
+    "ignoreInstrumental": true,
+    "ignoreRemix": false,
+    "ignoreKeywords": [],
+    "includeOnly": [],
+    "minDurationSeconds": 120
+  },
+  "analysis": {
+    "songsWithPreviews": 65,
+    "averageDuration": 182,
+    "albums": 17,
+    "dateRange": {
+      "earliest": "2022-10-28",
+      "latest": "2025-05-12"
+    }
+  }
+}

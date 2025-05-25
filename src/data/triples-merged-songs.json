@@ -20,7 +20,9 @@
       "trackNumber": 2,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722449532",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/2/d/0/92d40cf10a730b2f0a11c74d5c389939.mp3?hdnea=exp=1748165226~acl=/api/1/1/9/2/d/0/92d40cf10a730b2f0a11c74d5c389939.mp3*~data=user_id=0,application_id=42~hmac=9205033aed02b93d96d48eced0dbf6346a95783809b97991c808e8bdbb015bc7"
     },
     {
       "id": 2,
@@ -34,7 +36,9 @@
       "trackNumber": 3,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722449542",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/6/6/9/0/669083d4fed303795abb11eb90a7e812.mp3?hdnea=exp=1748165226~acl=/api/1/1/6/6/9/0/669083d4fed303795abb11eb90a7e812.mp3*~data=user_id=0,application_id=42~hmac=07673fc062c0219b326633f5e8fa7ba7b99cf4355ae1fb1a4d349c88c5063262"
     },
     {
       "id": 3,
@@ -48,7 +52,9 @@
       "trackNumber": 4,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722449552",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/4/7/3/0/4738562faeb3ebe5c08b0de9275f21fc.mp3?hdnea=exp=1748165226~acl=/api/1/1/4/7/3/0/4738562faeb3ebe5c08b0de9275f21fc.mp3*~data=user_id=0,application_id=42~hmac=37e451e55e5fa8b72658f0b8f9685c6fbba3b383bae63302a457eaf7aefdec1f"
     },
     {
       "id": 4,
@@ -62,7 +68,9 @@
       "trackNumber": 5,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722449562",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/c/e/0/8ce032c18448f14055e2be67246b7ebe.mp3?hdnea=exp=1748165226~acl=/api/1/1/8/c/e/0/8ce032c18448f14055e2be67246b7ebe.mp3*~data=user_id=0,application_id=42~hmac=2194aa55e0a9f91e040ee4f068a52df61cf4495e66b61f963f23cc5ae5d31685"
     },
     {
       "id": 5,
@@ -76,7 +84,9 @@
       "trackNumber": 1,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722453062",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/f/3/0/9f35a2c1616ec6dadd5d2311d90a3865.mp3?hdnea=exp=1748165226~acl=/api/1/1/9/f/3/0/9f35a2c1616ec6dadd5d2311d90a3865.mp3*~data=user_id=0,application_id=42~hmac=22387920e5c1bff4281ddb79af9172547cf8a403abf6cfaa360d2bec0d304bfc"
     },
     {
       "id": 6,
@@ -90,7 +100,9 @@
       "trackNumber": 3,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722453082",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/5/0/3/0/503cec57e651cc4cb7f7bdec825bbbd2.mp3?hdnea=exp=1748165226~acl=/api/1/1/5/0/3/0/503cec57e651cc4cb7f7bdec825bbbd2.mp3*~data=user_id=0,application_id=42~hmac=fb7438d1da14457b00392e8a375cfbb10a0eec8d2885056124792ec62d2eafe9"
     },
     {
       "id": 7,
@@ -104,7 +116,9 @@
       "trackNumber": 4,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722453092",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/1/5/d/0/15d5b51d8346a88a7bd5b566f017be40.mp3?hdnea=exp=1748165226~acl=/api/1/1/1/5/d/0/15d5b51d8346a88a7bd5b566f017be40.mp3*~data=user_id=0,application_id=42~hmac=429c6ab61ab8f8264f0c44bcca1cf4a93bf98a46fc0188e3652703ea3827f9af"
     },
     {
       "id": 8,
@@ -118,7 +132,9 @@
       "trackNumber": 5,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722453102",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/e/5/e/0/e5e4d18b2da86b98432346fbd2369cba.mp3?hdnea=exp=1748165226~acl=/api/1/1/e/5/e/0/e5e4d18b2da86b98432346fbd2369cba.mp3*~data=user_id=0,application_id=42~hmac=07995bfd17e42b8fd45e05e7217c96d570d25dd1ae2ff495a543207dabb45a70"
     },
     {
       "id": 9,
@@ -132,7 +148,9 @@
       "trackNumber": 6,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722453112",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/e/e/5/0/ee5d90ed6c4070029fbdab4d250898d8.mp3?hdnea=exp=1748165226~acl=/api/1/1/e/e/5/0/ee5d90ed6c4070029fbdab4d250898d8.mp3*~data=user_id=0,application_id=42~hmac=40a0b09996020656ae62de7ce79167398c1d1f4c7852c961a61dc43e994d4d50"
     },
     {
       "id": 10,
@@ -146,7 +164,9 @@
       "trackNumber": 2,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722449122",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/e/0/0/0e09437d93b1eca3d1ad24a02245bbc9.mp3?hdnea=exp=1748165225~acl=/api/1/1/0/e/0/0/0e09437d93b1eca3d1ad24a02245bbc9.mp3*~data=user_id=0,application_id=42~hmac=a5efbee65dac5748e539231e46cf23f75828433a6fdf875cabe6daff9cd525b0"
     },
     {
       "id": 11,
@@ -160,7 +180,9 @@
       "trackNumber": 3,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722445092",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/d/e/0/8deeb36df06ea45b51e636c4eebc6166.mp3?hdnea=exp=1748165231~acl=/api/1/1/8/d/e/0/8deeb36df06ea45b51e636c4eebc6166.mp3*~data=user_id=0,application_id=42~hmac=d39b33d9e8564475876f2507f1585c0cb1ab7f25300f24839916db088be04fa6"
     },
     {
       "id": 12,
@@ -174,7 +196,9 @@
       "trackNumber": 4,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722449142",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/b/d/0/2bdc214cc4fbfc2f669909086e11c101.mp3?hdnea=exp=1748165225~acl=/api/1/1/2/b/d/0/2bdc214cc4fbfc2f669909086e11c101.mp3*~data=user_id=0,application_id=42~hmac=54d1e798fe4b31c6023017e02b0cb837a90d5699a23f04463e06e593be7f5f60"
     },
     {
       "id": 13,
@@ -188,7 +212,9 @@
       "trackNumber": 5,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722449152",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/7/2/e/0/72e5ffb655249290c01fbbdc2ebeddd9.mp3?hdnea=exp=1748165225~acl=/api/1/1/7/2/e/0/72e5ffb655249290c01fbbdc2ebeddd9.mp3*~data=user_id=0,application_id=42~hmac=1b4c38fccb89b9befdc8470168b692a4d9cbb3476a1b8626a8280d5f78d83e3d"
     },
     {
       "id": 14,
@@ -202,7 +228,9 @@
       "trackNumber": 6,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722449162",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/9/a/0/09a387134a693bdc825653671b8d7a1f.mp3?hdnea=exp=1748165225~acl=/api/1/1/0/9/a/0/09a387134a693bdc825653671b8d7a1f.mp3*~data=user_id=0,application_id=42~hmac=492a501892dad4d519936f2e359bda01e5e3d128a6b1f8780735029ec4d83c5c"
     },
     {
       "id": 15,
@@ -216,7 +244,9 @@
       "trackNumber": 1,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722445092",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/d/e/0/8deeb36df06ea45b51e636c4eebc6166.mp3?hdnea=exp=1748165231~acl=/api/1/1/8/d/e/0/8deeb36df06ea45b51e636c4eebc6166.mp3*~data=user_id=0,application_id=42~hmac=d39b33d9e8564475876f2507f1585c0cb1ab7f25300f24839916db088be04fa6"
     },
     {
       "id": 16,
@@ -230,7 +260,9 @@
       "trackNumber": 2,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722445312",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/b/6/5/0/b65c93284c625a7f88aafeed4cddd7ba.mp3?hdnea=exp=1748165231~acl=/api/1/1/b/6/5/0/b65c93284c625a7f88aafeed4cddd7ba.mp3*~data=user_id=0,application_id=42~hmac=7a5809e40e2b4281ec50cdd7fec2ad8fb3e5ac273467fec844dbb14cd5168dd2"
     },
     {
       "id": 17,
@@ -244,7 +276,9 @@
       "trackNumber": 3,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722445322",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/a/0/9/0/a09e51efb255fe1367e927e1952333fb.mp3?hdnea=exp=1748165231~acl=/api/1/1/a/0/9/0/a09e51efb255fe1367e927e1952333fb.mp3*~data=user_id=0,application_id=42~hmac=af21e11af0f362af946ecacc97d612c24b68ff55492ed0bcec6eb26973a1383e"
     },
     {
       "id": 18,
@@ -258,7 +292,9 @@
       "trackNumber": 2,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722514082",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/1/a/9/0/1a91b612c302a860db81720cfef19dfa.mp3?hdnea=exp=1748165225~acl=/api/1/1/1/a/9/0/1a91b612c302a860db81720cfef19dfa.mp3*~data=user_id=0,application_id=42~hmac=1d23a1f64b21eb1420fd77472e185373accbd025010c11aafd567338f2631f2f"
     },
     {
       "id": 19,
@@ -272,7 +308,9 @@
       "trackNumber": 3,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722514092",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/a/6/6/0/a664defc99a045b3b74d1ed33f985bc8.mp3?hdnea=exp=1748165225~acl=/api/1/1/a/6/6/0/a664defc99a045b3b74d1ed33f985bc8.mp3*~data=user_id=0,application_id=42~hmac=39a39d7b894bb6513d31c19a1193c868edcc31f60539e74e8255b13f4d329fb9"
     },
     {
       "id": 20,
@@ -286,7 +324,9 @@
       "trackNumber": 4,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722514102",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/2/3/0/923c588ab3e941604f57a71b7092d9e7.mp3?hdnea=exp=1748165225~acl=/api/1/1/9/2/3/0/923c588ab3e941604f57a71b7092d9e7.mp3*~data=user_id=0,application_id=42~hmac=302604df22cecb326c11127158f1bb913925cbf73b238906e2eb05589acf7dbe"
     },
     {
       "id": 21,
@@ -300,7 +340,9 @@
       "trackNumber": 5,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722514112",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/1/d/a/0/1da16060e97e3ca3bde58b56afc41581.mp3?hdnea=exp=1748165225~acl=/api/1/1/1/d/a/0/1da16060e97e3ca3bde58b56afc41581.mp3*~data=user_id=0,application_id=42~hmac=418f8d3f7850e1e931b7fff6248654a9c7371e5a9b0fc01703536cfd637a72b4"
     },
     {
       "id": 22,
@@ -314,7 +356,9 @@
       "trackNumber": 6,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722514122",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/a/6/0/3a68e8b11ff9a17db2715404979a8334.mp3?hdnea=exp=1748165225~acl=/api/1/1/3/a/6/0/3a68e8b11ff9a17db2715404979a8334.mp3*~data=user_id=0,application_id=42~hmac=a5107dda238a0540225b78085706ec31b530f4afbfc38386d2f5d620be69b398"
     },
     {
       "id": 23,
@@ -328,7 +372,9 @@
       "trackNumber": 7,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722514132",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/3/f/0/03fbf07014462a20ef8400e11ccf8bf0.mp3?hdnea=exp=1748165225~acl=/api/1/1/0/3/f/0/03fbf07014462a20ef8400e11ccf8bf0.mp3*~data=user_id=0,application_id=42~hmac=dfcfa66b06a5831dbf91055eafce3debb3a6b702c6a4c2b41633145c90e6a6ee"
     },
     {
       "id": 24,
@@ -342,7 +388,9 @@
       "trackNumber": 2,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722453452",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/6/c/5/0/6c5c9cc5c0758222139bd24ce18fe881.mp3?hdnea=exp=1748165225~acl=/api/1/1/6/c/5/0/6c5c9cc5c0758222139bd24ce18fe881.mp3*~data=user_id=0,application_id=42~hmac=09cd7109bb4602db1d08c3ec0907b76710700437c993b60217eb75902ae28371"
     },
     {
       "id": 25,
@@ -356,7 +404,9 @@
       "trackNumber": 3,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722453462",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/f/3/b/0/f3bcc76186263e0438b1b5ed57212ab9.mp3?hdnea=exp=1748165225~acl=/api/1/1/f/3/b/0/f3bcc76186263e0438b1b5ed57212ab9.mp3*~data=user_id=0,application_id=42~hmac=ea00fbb835dc86a87b347af92ae745c2ce17b25c920bb1b7c1c04d29d90e6645"
     },
     {
       "id": 26,
@@ -370,7 +420,9 @@
       "trackNumber": 4,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722453472",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/0/7/0/307fc51ada505b93e0410b670e2de1dc.mp3?hdnea=exp=1748165225~acl=/api/1/1/3/0/7/0/307fc51ada505b93e0410b670e2de1dc.mp3*~data=user_id=0,application_id=42~hmac=66a73bb765cbc230f1825d6a6689513865c1f8e7f3f2b7270eb3c1b336f8a730"
     },
     {
       "id": 27,
@@ -384,7 +436,9 @@
       "trackNumber": 5,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722453482",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/2/e/0/c2ec4facf7d70198a4953bcfa7da974a.mp3?hdnea=exp=1748165225~acl=/api/1/1/c/2/e/0/c2ec4facf7d70198a4953bcfa7da974a.mp3*~data=user_id=0,application_id=42~hmac=f8ef776231ff2075747285f6633bee4f2bce3f1c990e4cb53a1b0e9a22621273"
     },
     {
       "id": 28,
@@ -398,7 +452,9 @@
       "trackNumber": 6,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722453492",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/d/6/0/8d6a59fb4979072d969b9f3742d526ef.mp3?hdnea=exp=1748165225~acl=/api/1/1/8/d/6/0/8d6a59fb4979072d969b9f3742d526ef.mp3*~data=user_id=0,application_id=42~hmac=fb900ec43149b14c2e747e87a2cdf9adc8411948229fe22a503aa9c33ef47ea5"
     },
     {
       "id": 29,
@@ -412,7 +468,9 @@
       "trackNumber": 7,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722453502",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/6/b/f/0/6bff8297ba26b24851b58393614ffbd3.mp3?hdnea=exp=1748165225~acl=/api/1/1/6/b/f/0/6bff8297ba26b24851b58393614ffbd3.mp3*~data=user_id=0,application_id=42~hmac=5d84a392016a04df03023897a4422deb81ba2dd56cb0e3451d3efdb7f2c828f6"
     },
     {
       "id": 30,
@@ -426,7 +484,9 @@
       "trackNumber": 1,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722445282",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/4/7/a/0/47a2fb051e1036698303f292a93fc3a5.mp3?hdnea=exp=1748165231~acl=/api/1/1/4/7/a/0/47a2fb051e1036698303f292a93fc3a5.mp3*~data=user_id=0,application_id=42~hmac=4d089f67b7bc4f0e6b530e025ee72867cc63330f6d65c246af3b56da9111d723"
     },
     {
       "id": 31,
@@ -440,7 +500,9 @@
       "trackNumber": 1,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722445262",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/1/4/0/2140986a9161cfff3f6dc3459376856e.mp3?hdnea=exp=1748165230~acl=/api/1/1/2/1/4/0/2140986a9161cfff3f6dc3459376856e.mp3*~data=user_id=0,application_id=42~hmac=8dfabad73c2ebebc36bc951d388bac78f43ac21d56dc1bb12375ee14ad3c4a2f"
     },
     {
       "id": 32,
@@ -454,7 +516,9 @@
       "trackNumber": 2,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2722445272",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/c/6/0/2c6410c310ca756a5935531f12cad130.mp3?hdnea=exp=1748165230~acl=/api/1/1/2/c/6/0/2c6410c310ca756a5935531f12cad130.mp3*~data=user_id=0,application_id=42~hmac=d7c03e054409243c52b560eba02f9bf35e50ec9aad533c7b4d07a2209e57ea4b"
     },
     {
       "id": 33,
@@ -468,7 +532,9 @@
       "trackNumber": 2,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2789230942",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/e/b/0/8ebf259db5efaed4591fd934198dd360.mp3?hdnea=exp=1748165224~acl=/api/1/1/8/e/b/0/8ebf259db5efaed4591fd934198dd360.mp3*~data=user_id=0,application_id=42~hmac=43cbe89aa7801d052598e4cf1da3b7dd49803d5df9f987a1bb66e8b751acc7e1"
     },
     {
       "id": 34,
@@ -482,7 +548,9 @@
       "trackNumber": 3,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2789230952",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/b/c/0/2bc3f300910a00c43d88004f8d2c123b.mp3?hdnea=exp=1748165224~acl=/api/1/1/2/b/c/0/2bc3f300910a00c43d88004f8d2c123b.mp3*~data=user_id=0,application_id=42~hmac=8eae27b52532936344e931a014466f8f01916be1497c6fc7179d53dd0e27254c"
     },
     {
       "id": 35,
@@ -496,7 +564,9 @@
       "trackNumber": 4,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2789230962",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/7/0/c/0/70c25e8610c801d77bd1166beac566bf.mp3?hdnea=exp=1748165224~acl=/api/1/1/7/0/c/0/70c25e8610c801d77bd1166beac566bf.mp3*~data=user_id=0,application_id=42~hmac=b1c53ca3e226d5588d89db538235c71ac8bac3ffaf9f3ce1ec2e86ac4852c8db"
     },
     {
       "id": 36,
@@ -510,7 +580,9 @@
       "trackNumber": 5,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2789230972",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/5/8/4/0/58403e656d2e0cca5d36289d13628837.mp3?hdnea=exp=1748165224~acl=/api/1/1/5/8/4/0/58403e656d2e0cca5d36289d13628837.mp3*~data=user_id=0,application_id=42~hmac=d792473e7a087b414d1cccb25e6f5ad79619c42678171e12330eec498911e68b"
     },
     {
       "id": 37,
@@ -524,7 +596,9 @@
       "trackNumber": 6,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2789230982",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/c/d/0/2cd6370dcf0f68307f3b5dc5592aeb24.mp3?hdnea=exp=1748165224~acl=/api/1/1/2/c/d/0/2cd6370dcf0f68307f3b5dc5592aeb24.mp3*~data=user_id=0,application_id=42~hmac=927fa8d893aaba30f42792666c60576da0ae4c932352660036b5044c715996e4"
     },
     {
       "id": 38,
@@ -538,7 +612,9 @@
       "trackNumber": 7,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2789230992",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/a/5/a/0/a5a711f1cfd45501583400709a468cf9.mp3?hdnea=exp=1748165224~acl=/api/1/1/a/5/a/0/a5a711f1cfd45501583400709a468cf9.mp3*~data=user_id=0,application_id=42~hmac=f629fc511be615aaabafb39e017c08fa223d9f0c405ad1a8d2ca533354c0f2a4"
     },
     {
       "id": 39,
@@ -552,7 +628,9 @@
       "trackNumber": 8,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2789231002",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/f/6/2/0/f624bce54eaf126ac697c76607cd6863.mp3?hdnea=exp=1748165224~acl=/api/1/1/f/6/2/0/f624bce54eaf126ac697c76607cd6863.mp3*~data=user_id=0,application_id=42~hmac=b65b01fa227d98cf73022a82fd58c0a9d3bd377a2d02d538e265ed28a2ac5c41"
     },
     {
       "id": 40,
@@ -566,7 +644,9 @@
       "trackNumber": 9,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2789231012",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/1/7/0/0177a4977428c508b9859bdae36647c0.mp3?hdnea=exp=1748165224~acl=/api/1/1/0/1/7/0/0177a4977428c508b9859bdae36647c0.mp3*~data=user_id=0,application_id=42~hmac=e691a0020575be6026d391a2546e34d5f6398c5c372c704178d6966355693693"
     },
     {
       "id": 41,
@@ -580,7 +660,9 @@
       "trackNumber": 10,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2789231022",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/4/e/3/0/4e3b86d3919cce9ee102e74421d346bf.mp3?hdnea=exp=1748165224~acl=/api/1/1/4/e/3/0/4e3b86d3919cce9ee102e74421d346bf.mp3*~data=user_id=0,application_id=42~hmac=3b1c474207dd33cf7617ae34c5f5aa827557e1ec476e09a3ab98e91be2777315"
     },
     {
       "id": 42,
@@ -594,7 +676,9 @@
       "trackNumber": 1,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "2844692902",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/d/5/0/cd53d647d4bd127530b8799664533847.mp3?hdnea=exp=1748165230~acl=/api/1/1/c/d/5/0/cd53d647d4bd127530b8799664533847.mp3*~data=user_id=0,application_id=42~hmac=cc86b73e55a2540e842b904d8a630996df88275663df3b10b82804518f132a29"
     },
     {
       "id": 43,
@@ -608,7 +692,9 @@
       "trackNumber": 2,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3039714651",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/b/2/0/3b2ad63539cdc0d6d864bfada17ccfe0.mp3?hdnea=exp=1748165223~acl=/api/1/1/3/b/2/0/3b2ad63539cdc0d6d864bfada17ccfe0.mp3*~data=user_id=0,application_id=42~hmac=a683a6d2abc2fd7e6751751f8e18363bed60bbc945b0e85b2ff34aaf4a8c6e3e"
     },
     {
       "id": 44,
@@ -622,7 +708,9 @@
       "trackNumber": 3,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3039714661",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/e/b/b/0/ebb699b2bda5add324e7ebc927122848.mp3?hdnea=exp=1748165223~acl=/api/1/1/e/b/b/0/ebb699b2bda5add324e7ebc927122848.mp3*~data=user_id=0,application_id=42~hmac=673764d9a17685aace8fcea8dc0ccc124152f52b757475d048f6b6f936b4953f"
     },
     {
       "id": 45,
@@ -636,7 +724,9 @@
       "trackNumber": 4,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": null,
+      "deezerPreviewUrl": null
     },
     {
       "id": 46,
@@ -650,7 +740,9 @@
       "trackNumber": 5,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3039714681",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/7/0/8/0/7087aedc12729a458d5ba338c225c682.mp3?hdnea=exp=1748165223~acl=/api/1/1/7/0/8/0/7087aedc12729a458d5ba338c225c682.mp3*~data=user_id=0,application_id=42~hmac=d22d28e9933c8d2560ceedb78a4e900e8d92e7d9aa777b1601173b1ff85543fd"
     },
     {
       "id": 47,
@@ -664,7 +756,9 @@
       "trackNumber": 6,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3039714691",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/f/1/5/0/f158b1590cb95a04b4aa68a6e7f09909.mp3?hdnea=exp=1748165223~acl=/api/1/1/f/1/5/0/f158b1590cb95a04b4aa68a6e7f09909.mp3*~data=user_id=0,application_id=42~hmac=b5fad600b77ccbf470aa2f52cdf6c97e7644a12ffbd4c247e32c47a403ff4967"
     },
     {
       "id": 48,
@@ -678,7 +772,9 @@
       "trackNumber": 7,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3039714701",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/b/0/c/0/b0ce78dcdf4418eb0e6ad2ece9ebb613.mp3?hdnea=exp=1748165223~acl=/api/1/1/b/0/c/0/b0ce78dcdf4418eb0e6ad2ece9ebb613.mp3*~data=user_id=0,application_id=42~hmac=7f44aaae29b623cb16cf315d42f97f4ece8e990712f83828111abfef7ca4df2d"
     },
     {
       "id": 49,
@@ -692,7 +788,9 @@
       "trackNumber": 8,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3039714711",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/f/6/a/0/f6a25ee92557643d2c7490d2354ebd3e.mp3?hdnea=exp=1748165223~acl=/api/1/1/f/6/a/0/f6a25ee92557643d2c7490d2354ebd3e.mp3*~data=user_id=0,application_id=42~hmac=fb2863c21f59b18a0140cfe898369f4db8d04a4a9fbd546a384033a1dc77956b"
     },
     {
       "id": 50,
@@ -706,7 +804,9 @@
       "trackNumber": 9,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3039714721",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/d/7/0/0d7ea280877d197ea4c5838220a59ed8.mp3?hdnea=exp=1748165223~acl=/api/1/1/0/d/7/0/0d7ea280877d197ea4c5838220a59ed8.mp3*~data=user_id=0,application_id=42~hmac=7b56afab821071c6d8ae379e5dd4b8cd6377b80256b3035d6745159eb8141751"
     },
     {
       "id": 51,
@@ -720,7 +820,9 @@
       "trackNumber": 1,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": null,
+      "deezerPreviewUrl": null
     },
     {
       "id": 52,
@@ -734,7 +836,9 @@
       "trackNumber": 1,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3075554421",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/e/9/e/0/e9ec5738eeaec8c7e18b8b84d3d71418.mp3?hdnea=exp=1748165229~acl=/api/1/1/e/9/e/0/e9ec5738eeaec8c7e18b8b84d3d71418.mp3*~data=user_id=0,application_id=42~hmac=e76118ab5f17353e94ac4556e652222935df6d68e0f32022e00e94951e873850"
     },
     {
       "id": 53,
@@ -748,7 +852,9 @@
       "trackNumber": 2,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": null,
+      "deezerPreviewUrl": null
     },
     {
       "id": 54,
@@ -762,7 +868,9 @@
       "trackNumber": 3,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3075554421",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/e/9/e/0/e9ec5738eeaec8c7e18b8b84d3d71418.mp3?hdnea=exp=1748165229~acl=/api/1/1/e/9/e/0/e9ec5738eeaec8c7e18b8b84d3d71418.mp3*~data=user_id=0,application_id=42~hmac=e76118ab5f17353e94ac4556e652222935df6d68e0f32022e00e94951e873850"
     },
     {
       "id": 55,
@@ -776,7 +884,9 @@
       "trackNumber": 1,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3112030661",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/6/5/0/36565caf5e1cb4158598c623445d745f.mp3?hdnea=exp=1748165227~acl=/api/1/1/3/6/5/0/36565caf5e1cb4158598c623445d745f.mp3*~data=user_id=0,application_id=42~hmac=fd6433464fed1b7160e0bf95bddcdf89e783c394a93aaeec0ca7f8efda59a738"
     },
     {
       "id": 56,
@@ -790,7 +900,9 @@
       "trackNumber": 1,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": null,
+      "deezerPreviewUrl": null
     },
     {
       "id": 57,
@@ -804,7 +916,9 @@
       "trackNumber": 1,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3310625551",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/a/b/f/0/abfee249fe1c56934e8dacade9715e7b.mp3?hdnea=exp=1748165227~acl=/api/1/1/a/b/f/0/abfee249fe1c56934e8dacade9715e7b.mp3*~data=user_id=0,application_id=42~hmac=b05e5e5cdc235b3919b92a921e267ab21f4e49813a00bb3242908403230032ac"
     },
     {
       "id": 58,
@@ -818,7 +932,9 @@
       "trackNumber": 1,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3310414691",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/e/c/0/9ec85dbfce513a0bf0a4f47bbba40f6f.mp3?hdnea=exp=1748165227~acl=/api/1/1/9/e/c/0/9ec85dbfce513a0bf0a4f47bbba40f6f.mp3*~data=user_id=0,application_id=42~hmac=60ccf5e5e24ec4d5fdc7640c27a908be103b1932d620925ed191c53c8e10d751"
     },
     {
       "id": 59,
@@ -832,7 +948,9 @@
       "trackNumber": 2,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3334081191",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/b/5/2/0/b52377425920beca6ac15f6ee03065c7.mp3?hdnea=exp=1748165223~acl=/api/1/1/b/5/2/0/b52377425920beca6ac15f6ee03065c7.mp3*~data=user_id=0,application_id=42~hmac=3cc267ffaeba566c4ba7a8c2a40d96a872a541351e2d8765bb6fb73b56aab101"
     },
     {
       "id": 60,
@@ -846,7 +964,9 @@
       "trackNumber": 3,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3334081201",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/2/a/0/22a3fce5062fe6e5b3b65c8a4c901943.mp3?hdnea=exp=1748165223~acl=/api/1/1/2/2/a/0/22a3fce5062fe6e5b3b65c8a4c901943.mp3*~data=user_id=0,application_id=42~hmac=30ab659d56e8e72bc78d49d2aecfc16cb1df95d5a76970ca87ba681078896f30"
     },
     {
       "id": 61,
@@ -860,7 +980,9 @@
       "trackNumber": 4,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3334081211",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/a/1/0/8a19b9878e9609111d7ef5457099c623.mp3?hdnea=exp=1748165223~acl=/api/1/1/8/a/1/0/8a19b9878e9609111d7ef5457099c623.mp3*~data=user_id=0,application_id=42~hmac=f0ebf4d993ceab498cf42e9edf68fdb9828ecad9ba622908cd04d5beb395a43b"
     },
     {
       "id": 62,
@@ -874,7 +996,9 @@
       "trackNumber": 5,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3334081221",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/6/0/9/0/6091e7d577133a0ef3bdb75b522a4ae0.mp3?hdnea=exp=1748165223~acl=/api/1/1/6/0/9/0/6091e7d577133a0ef3bdb75b522a4ae0.mp3*~data=user_id=0,application_id=42~hmac=59769e6d0dd67d15147687d2a5b9e3e4499b1769cc72f1707277da795802d820"
     },
     {
       "id": 63,
@@ -888,7 +1012,9 @@
       "trackNumber": 6,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3334081231",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/5/b/0/0/5b00a73b0bd0be5388852430bec2cd64.mp3?hdnea=exp=1748165223~acl=/api/1/1/5/b/0/0/5b00a73b0bd0be5388852430bec2cd64.mp3*~data=user_id=0,application_id=42~hmac=375d73e2d3cfd5f9bb80cad9ce9cd761a6733b27d6f374e4a0f40c30e824fb35"
     },
     {
       "id": 64,
@@ -902,7 +1028,9 @@
       "trackNumber": 7,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3334081241",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/d/3/0/cd3253069daa8f3020630c281db0564f.mp3?hdnea=exp=1748165223~acl=/api/1/1/c/d/3/0/cd3253069daa8f3020630c281db0564f.mp3*~data=user_id=0,application_id=42~hmac=e0c8d08b08ad201039cde62a0ec44653158c72c27645ca921b942aaa9b76cabc"
     },
     {
       "id": 65,
@@ -916,7 +1044,9 @@
       "trackNumber": 8,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3334081251",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/d/7/3/0/d73337ff1c6aabb836292c01d9ed08df.mp3?hdnea=exp=1748165223~acl=/api/1/1/d/7/3/0/d73337ff1c6aabb836292c01d9ed08df.mp3*~data=user_id=0,application_id=42~hmac=65945c9b9c1386f1f61b92dd46aa72439cdb9a55a3186d55cfeb0bec1b2a0b6b"
     },
     {
       "id": 66,
@@ -930,7 +1060,9 @@
       "trackNumber": 9,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3334081261",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/5/b/7/0/5b7d53629a05234bce1b576c9e8b35cf.mp3?hdnea=exp=1748165223~acl=/api/1/1/5/b/7/0/5b7d53629a05234bce1b576c9e8b35cf.mp3*~data=user_id=0,application_id=42~hmac=458d58ba3b4caeec10f6c3099531d36a7784b5184c4b68bb79d4584195c76c78"
     },
     {
       "id": 67,
@@ -944,7 +1076,9 @@
       "trackNumber": 10,
       "artists": [
         "tripleS"
-      ]
+      ],
+      "deezerId": "3334081271",
+      "deezerPreviewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/a/8/0/0a828298e6f41e2e8a708ce47ab547ae.mp3?hdnea=exp=1748165223~acl=/api/1/1/0/a/8/0/0a828298e6f41e2e8a708ce47ab547ae.mp3*~data=user_id=0,application_id=42~hmac=eb42fbff3b690427af40155c7686514f298a962ec2edb222fcad8147761b4ca0"
     }
   ],
   "totalSongs": 67,
@@ -955,5 +1089,12 @@
     "ignoreKeywords": [],
     "includeOnly": [],
     "minDurationSeconds": 120
+  },
+  "mergeInfo": {
+    "spotifyCount": 67,
+    "deezerCount": 65,
+    "matchedCount": 63,
+    "mergedAt": "2025-05-25T09:12:16.442Z",
+    "coveragePercentage": 94
   }
 }

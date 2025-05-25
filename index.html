@@ -3,19 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tripleS Song Sorter</title>
+
+    <!-- Primary Meta Tags -->
+    <title>tripleS Song Sorter - Rank Your Favorite tripleS Songs | K-pop Song Ranking Game</title>
+    <meta name="title" content="tripleS Song Sorter - Rank Your Favorite tripleS Songs | K-pop Song Ranking Game" />
+    <meta name="description" content="Create your ultimate tripleS song ranking! Compare and rank all tripleS songs using our interactive Elo-based ranking system. Discover your favorites from ASSEMBLE24, LOVElution, and more albums." />
+    <meta name="keywords" content="tripleS, song ranking, K-pop, ASSEMBLE24, LOVElution, Cherry Gene, Heavy Metal Wings, song sorter, music ranking, tripleS songs, WAV, Acid Angel from Asia" />
+    <meta name="author" content="@celdaris" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sssorter.pages.dev/songs" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sssorter.pages.dev/songs" />
+    <meta property="og:title" content="tripleS Song Sorter - Rank Your Favorite tripleS Songs" />
+    <meta property="og:description" content="Create your ultimate tripleS song ranking! Compare and rank all tripleS songs using our interactive Elo-based ranking system." />
+    <meta property="og:image" content="https://sssorter.pages.dev/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="tripleS Song Sorter" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sssorter.pages.dev/songs" />
+    <meta property="twitter:title" content="tripleS Song Sorter - Rank Your Favorite tripleS Songs" />
+    <meta property="twitter:description" content="Create your ultimate tripleS song ranking! Compare and rank all tripleS songs using our interactive Elo-based ranking system." />
+    <meta property="twitter:image" content="https://sssorter.pages.dev/og-image.jpg" />
+    <meta property="twitter:creator" content="@celdaris" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ff6b9d" />
+    <meta name="msapplication-TileColor" content="#ff6b9d" />
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://widget.deezer.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "tripleS Song Sorter",
+      "url": "https://sssorter.pages.dev/songs",
+      "description": "Interactive K-pop song ranking game for tripleS music. Create your ultimate tripleS song ranking using an Elo-based comparison system.",
+      "applicationCategory": "Entertainment",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Person",
+        "name": "@celdaris",
+        "url": "https://x.com/celdaris"
+      },
+      "about": {
+        "@type": "MusicGroup",
+        "name": "tripleS",
+        "@id": "https://musicbrainz.org/artist/tripleS",
+        "genre": "K-pop"
+      },
+      "keywords": "tripleS, K-pop, song ranking, music game, Elo rating",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "browserRequirements": "Requires JavaScript"
+    }
+    </script>
+
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <div id="app">
-      <h1>tripleS Song Sorter</h1>
-      <div id="game-container"></div>
+      <header>
+        <h1>tripleS Song Sorter</h1>
+        <p class="app-description">Rank your favorite tripleS songs</p>
+      </header>
+      <main id="game-container" role="main"></main>
     </div>
 
     <footer class="page-footer">
       <p style="text-align: center">
         made with ♡ for tripleS by
-        <a href="https://x.com/celdaris">@celdaris</a>
+        <a href="https://x.com/celdaris" rel="noopener" target="_blank">@celdaris</a>
       </p>
     </footer>
 

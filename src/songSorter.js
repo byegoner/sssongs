@@ -1,8 +1,69 @@
-import triplesData from "./data/triples-songs.json" assert { type: "json" };
+// Static imports for bundling
+import spotifyData from './data/triples-songs.json';
+import deezerData from './data/triples-deezer-songs.json';
+
+// Provider configuration with static data references
+const PROVIDER_CONFIG = {
+  'spotify': {
+    data: spotifyData,
+    embedUrl: (id) => `https://open.spotify.com/embed/track/${id}`,
+    idField: 'spotifyId'
+  },
+  'deezer': {
+    data: deezerData,
+    embedUrl: (id) => `https://widget.deezer.com/widget/dark/track/${id}`,
+    idField: 'deezerId'
+  }
+};
+
+// Load data for specific provider (now synchronous)
+function loadProviderData(provider) {
+  const config = PROVIDER_CONFIG[provider];
+  if (!config) {
+    throw new Error(`Unknown provider: ${provider}`);
+  }
+
+  const data = config.data;
+  console.log(`✅ Loaded ${provider} data from bundle`);
+  return data?.songs || data.songs || [];
+}
+
+// Get embed URL for provider
+function getProviderEmbedUrl(provider, songId) {
+  const config = PROVIDER_CONFIG[provider];
+  return config ? config.embedUrl(songId) : null;
+}
+
+// Get provider ID field name
+function getProviderIdField(provider) {
+  const config = PROVIDER_CONFIG[provider];
+  return config ? config.idField : null;
+}
 
 export class SongSorter {
-  constructor(songs, totalRounds = 70) {
-    this.songs = songs.map((song) => ({
+  constructor(songs, totalRounds = 70, musicProvider = 'deezer') {
+    this.musicProvider = musicProvider;
+    const idField = getProviderIdField(musicProvider);
+
+    if (!idField) {
+      throw new Error(`Unknown provider: ${musicProvider}`);
+    }
+
+    // Filter songs based on provider availability
+    const availableSongs = songs.filter(song => {
+      const providerId = song[idField];
+      return providerId !== null && providerId !== undefined && providerId !== '';
+    });
+
+    console.log(`🎵 Using ${musicProvider} provider`);
+    console.log(`📊 Song availability: ${availableSongs.length}/${songs.length} songs have valid ${idField}`);
+
+    if (availableSongs.length === 0) {
+      console.error(`❌ No songs available for ${musicProvider} provider!`);
+      console.error(`💡 Try running: npm run fetch-${musicProvider}-triples`);
+    }
+
+    this.songs = availableSongs.map((song) => ({
       ...song,
       rating: 1200,
       appearances: 0,
@@ -198,7 +259,7 @@ export class SongSorter {
       options: options,
       progress: progress,
       phaseMessage: this.currentPhaseMessage || null,
-      isFinalShowdown: this.currentRound >= 50,
+      isFinalShowdown: this.currentRound >= 60,
     };
   }
 
@@ -261,8 +322,5 @@ export class SongSorter {
   }
 }
 
-export function getSpotifyEmbedUrl(spotifyId) {
-  return `https://open.spotify.com/embed/track/${spotifyId}`;
-}
-
-export const tripleSSongs = triplesData.songs;
+// Export the provider functions and a placeholder for songs (will be loaded dynamically)
+export { loadProviderData, getProviderEmbedUrl, getProviderIdField, PROVIDER_CONFIG };

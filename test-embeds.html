@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify vs Deezer Embed Performance Test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #0a0a0a;
+        color: white;
+      }
+
+      .comparison {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .platform {
+        border: 1px solid #333;
+        border-radius: 10px;
+        padding: 20px;
+        background: #1a1a1a;
+      }
+
+      .platform h3 {
+        margin-top: 0;
+        color: #ff6b9d;
+      }
+
+      .embed-container {
+        width: 100%;
+        height: 152px;
+        border-radius: 8px;
+        margin: 10px 0;
+        background: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .embed-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 8px;
+      }
+
+      .loading {
+        color: #666;
+        font-style: italic;
+      }
+
+      .metrics {
+        background: #2a2a2a;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+
+      .metric {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+      }
+
+      .controls {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      button {
+        background: linear-gradient(45deg, #ff6b9d, #c471ed);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 0 10px;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+      }
+
+      button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;
+      }
+
+      .songs {
+        background: #1a1a1a;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .song-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+
+      .song-item {
+        padding: 10px;
+        background: #2a2a2a;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+
+      .song-item:hover {
+        background: #3a3a3a;
+      }
+
+      .song-item.selected {
+        background: #ff6b9d;
+      }
+
+      @media (max-width: 768px) {
+        .comparison {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎵 Spotify vs Deezer Embed Performance Test</h1>
+    <p>
+      Compare loading speed and performance between Spotify and Deezer embeds
+    </p>
+
+    <div class="controls">
+      <button onclick="loadTestSong()">Load Test Song</button>
+      <button onclick="runBenchmark()" id="benchmarkBtn">
+        Run Benchmark (5 songs)
+      </button>
+      <button onclick="clearEmbeds()">Clear All</button>
+    </div>
+
+    <div class="comparison">
+      <div class="platform">
+        <h3>🎧 Spotify</h3>
+        <div class="embed-container" id="spotify-container">
+          <div class="loading">Click "Load Test Song" to start</div>
+        </div>
+        <div class="metrics" id="spotify-metrics">
+          <div class="metric">
+            <span>Load Time:</span>
+            <span id="spotify-load-time">-</span>
+          </div>
+          <div class="metric">
+            <span>Status:</span>
+            <span id="spotify-status">Ready</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="platform">
+        <h3>🎶 Deezer</h3>
+        <div class="embed-container" id="deezer-container">
+          <div class="loading">Click "Load Test Song" to start</div>
+        </div>
+        <div class="metrics" id="deezer-metrics">
+          <div class="metric">
+            <span>Load Time:</span>
+            <span id="deezer-load-time">-</span>
+          </div>
+          <div class="metric">
+            <span>Status:</span>
+            <span id="deezer-status">Ready</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="songs">
+      <h3>Test Songs</h3>
+      <p>Select a song to test, or use the benchmark to test multiple songs</p>
+      <div class="song-list" id="song-list">
+        <!-- Songs will be loaded here -->
+      </div>
+    </div>
+
+    <script>
+      // Test songs with both Spotify and Deezer IDs
+      const testSongs = [
+        {
+          title: "Generation",
+          album: "ACCESS",
+          spotifyId: "3KuCXHNvtheCDzwZpaRR9I", // Example - replace with actual
+          deezerId: "2722449532", // Example - replace with actual from Deezer fetch
+        },
+        {
+          title: "Girls' Capitalism",
+          album: "ASSEMBLE",
+          spotifyId: "3B9kAk2XZ4n4RK8HpxkkdK",
+          deezerId: "2722514082",
+        },
+        // Add more songs as they become available from Deezer fetch
+      ];
+
+      let currentSongIndex = 0;
+      let benchmarkResults = [];
+
+      function updateStatus(platform, status) {
+        document.getElementById(`${platform}-status`).textContent = status;
+      }
+
+      function updateLoadTime(platform, time) {
+        document.getElementById(`${platform}-load-time`).textContent =
+          time + "ms";
+      }
+
+      function createSpotifyEmbed(songId) {
+        const iframe = document.createElement("iframe");
+        iframe.src = `https://open.spotify.com/embed/track/${songId}`;
+        iframe.width = "100%";
+        iframe.height = "152";
+        iframe.frameBorder = "0";
+        iframe.allow = "encrypted-media";
+        return iframe;
+      }
+
+      function createDeezerEmbed(songId) {
+        const iframe = document.createElement("iframe");
+        iframe.src = `https://widget.deezer.com/widget/dark/track/${songId}`;
+        iframe.width = "100%";
+        iframe.height = "152";
+        iframe.frameBorder = "0";
+        return iframe;
+      }
+
+      function loadEmbed(platform, songId, createEmbedFn) {
+        const container = document.getElementById(`${platform}-container`);
+        const startTime = performance.now();
+
+        updateStatus(platform, "Loading...");
+        container.innerHTML = "";
+
+        const iframe = createEmbedFn(songId);
+
+        iframe.onload = () => {
+          const loadTime = Math.round(performance.now() - startTime);
+          updateLoadTime(platform, loadTime);
+          updateStatus(platform, "Loaded");
+
+          // Store benchmark data
+          if (window.benchmarkMode) {
+            benchmarkResults.push({
+              platform,
+              songIndex: currentSongIndex,
+              loadTime,
+            });
+          }
+        };
+
+        iframe.onerror = () => {
+          updateStatus(platform, "Error");
+          updateLoadTime(platform, "Failed");
+        };
+
+        container.appendChild(iframe);
+      }
+
+      function loadTestSong(songIndex = 0) {
+        if (testSongs.length === 0) {
+          alert(
+            "No test songs available. Please run the Deezer fetch script first.",
+          );
+          return;
+        }
+
+        currentSongIndex = songIndex;
+        const song = testSongs[songIndex];
+
+        console.log(`Loading: ${song.title}`);
+
+        // Load both embeds simultaneously
+        loadEmbed("spotify", song.spotifyId, createSpotifyEmbed);
+        loadEmbed("deezer", song.deezerId, createDeezerEmbed);
+
+        // Update selected song in list
+        document.querySelectorAll(".song-item").forEach((item, index) => {
+          item.classList.toggle("selected", index === songIndex);
+        });
+      }
+
+      async function runBenchmark() {
+        if (testSongs.length === 0) {
+          alert(
+            "No test songs available. Please run the Deezer fetch script first.",
+          );
+          return;
+        }
+
+        const benchmarkBtn = document.getElementById("benchmarkBtn");
+        benchmarkBtn.disabled = true;
+        benchmarkBtn.textContent = "Running Benchmark...";
+
+        window.benchmarkMode = true;
+        benchmarkResults = [];
+
+        // Test up to 5 songs
+        const songsToTest = Math.min(5, testSongs.length);
+
+        for (let i = 0; i < songsToTest; i++) {
+          updateStatus("spotify", `Benchmark ${i + 1}/${songsToTest}`);
+          updateStatus("deezer", `Benchmark ${i + 1}/${songsToTest}`);
+
+          loadTestSong(i);
+
+          // Wait for both embeds to load (or timeout)
+          await new Promise((resolve) => setTimeout(resolve, 3000));
+        }
+
+        // Calculate results
+        const spotifyTimes = benchmarkResults
+          .filter((r) => r.platform === "spotify")
+          .map((r) => r.loadTime);
+        const deezerTimes = benchmarkResults
+          .filter((r) => r.platform === "deezer")
+          .map((r) => r.loadTime);
+
+        const spotifyAvg =
+          spotifyTimes.reduce((a, b) => a + b, 0) / spotifyTimes.length;
+        const deezerAvg =
+          deezerTimes.reduce((a, b) => a + b, 0) / deezerTimes.length;
+
+        console.log("Benchmark Results:");
+        console.log("Spotify average:", Math.round(spotifyAvg) + "ms");
+        console.log("Deezer average:", Math.round(deezerAvg) + "ms");
+
+        const winner = deezerAvg < spotifyAvg ? "Deezer" : "Spotify";
+        const improvement = Math.round(Math.abs(spotifyAvg - deezerAvg));
+
+        alert(
+          `Benchmark Complete!\n\nSpotify: ${Math.round(spotifyAvg)}ms\nDeezer: ${Math.round(deezerAvg)}ms\n\nWinner: ${winner} (${improvement}ms faster)`,
+        );
+
+        benchmarkBtn.disabled = false;
+        benchmarkBtn.textContent = "Run Benchmark (5 songs)";
+        window.benchmarkMode = false;
+      }
+
+      function clearEmbeds() {
+        document.getElementById("spotify-container").innerHTML =
+          '<div class="loading">Cleared</div>';
+        document.getElementById("deezer-container").innerHTML =
+          '<div class="loading">Cleared</div>';
+        updateStatus("spotify", "Ready");
+        updateStatus("deezer", "Ready");
+        updateLoadTime("spotify", "-");
+        updateLoadTime("deezer", "-");
+      }
+
+      function populateSongList() {
+        const songList = document.getElementById("song-list");
+
+        if (testSongs.length === 0) {
+          songList.innerHTML =
+            '<div style="text-align: center; color: #666;">No songs available. Run "npm run fetch-deezer-triples" first.</div>';
+          return;
+        }
+
+        songList.innerHTML = testSongs
+          .map(
+            (song, index) => `
+                <div class="song-item" onclick="loadTestSong(${index})">
+                    <strong>${song.title}</strong><br>
+                    <small>${song.album}</small>
+                </div>
+            `,
+          )
+          .join("");
+      }
+
+      // Initialize
+      populateSongList();
+
+      // Display instructions
+      console.log("🎵 Spotify vs Deezer Performance Test");
+      console.log("Instructions:");
+      console.log(
+        '1. Run "npm run fetch-deezer-triples" to get Deezer song IDs',
+      );
+      console.log("2. Update testSongs array with real Deezer IDs");
+      console.log('3. Click "Load Test Song" to compare individual songs');
+      console.log('4. Click "Run Benchmark" to test multiple songs');
+
+      if (testSongs.length === 0 || testSongs[0].deezerId === "1234567890") {
+        alert(
+          "⚠️ Test Setup Required\n\n1. Run: npm run fetch-deezer-triples\n2. Update testSongs array with real Deezer IDs\n3. Refresh this page",
+        );
+      }
+    </script>
+  </body>
+</html>
