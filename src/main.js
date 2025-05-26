@@ -1,7 +1,12 @@
-import { SongSorter, loadProviderData, getProviderEmbedUrl, getProviderIdField } from "./songSorter.js";
+import {
+  SongSorter,
+  loadProviderData,
+  getProviderEmbedUrl,
+  getProviderIdField,
+} from "./songSorter.js";
 
 // Configuration - choose ONE provider
-const MUSIC_PROVIDER = 'deezer'; // 'spotify' or 'deezer'
+const MUSIC_PROVIDER = "deezer"; // 'spotify' or 'deezer'
 
 const gameContainer = document.getElementById("game-container");
 let sorter = null;
@@ -24,7 +29,7 @@ function initializeApp() {
 
     renderRound();
   } catch (error) {
-    console.error('Failed to initialize app:', error);
+    console.error("Failed to initialize app:", error);
     showDataError(error.message);
   }
 }
@@ -74,7 +79,9 @@ function createMusicEmbed(song, autoplay = false) {
   const embedId = getEmbedId(song);
 
   if (!embedUrl || !embedId) {
-    console.warn(`No ${MUSIC_PROVIDER} embed available for song: ${song.title}`);
+    console.warn(
+      `No ${MUSIC_PROVIDER} embed available for song: ${song.title}`,
+    );
     return null;
   }
 
@@ -82,31 +89,40 @@ function createMusicEmbed(song, autoplay = false) {
   const iframe = document.createElement("iframe");
   iframe.src = embedUrl;
   iframe.width = "100%";
-  iframe.height = "140";
+  iframe.height = "150";
   iframe.frameBorder = "0";
   iframe.title = "deezer-widget";
   iframe.allowTransparency = true;
-  iframe.allow = "encrypted-media; clipboard-write; accelerometer; gyroscope; magnetometer";
+  iframe.allow =
+    "encrypted-media; clipboard-write; accelerometer; gyroscope; magnetometer";
   iframe.style.borderRadius = "12px";
   iframe.style.margin = "0";
   iframe.style.width = "100%";
-  iframe.style.height = "100%";
+
+  // Mobile-specific height fix for Deezer scrollbar
+  const isMobile = window.innerWidth <= 767;
+  if (isMobile) {
+    iframe.style.height = "115%";
+  } else {
+    iframe.style.height = "100%";
+  }
+
   iframe.setAttribute("data-embed-id", embedId);
   iframe.setAttribute("data-provider", MUSIC_PROVIDER);
   return iframe;
 }
 
 // Load and play embed when user clicks play button
-window.loadAndPlayEmbed = function(embedId, playButton) {
+window.loadAndPlayEmbed = function (embedId, playButton) {
   console.log(`🎵 Loading embed on demand: ${embedId}`);
 
-  const container = playButton.closest('.embed-container');
-  const placeholder = container.querySelector('.play-placeholder');
+  const container = playButton.closest(".embed-container");
+  const placeholder = container.querySelector(".play-placeholder");
 
   if (!container || !placeholder) return;
 
   // Find the song data
-  const song = currentRoundOptions.find(s => getEmbedId(s) === embedId);
+  const song = currentRoundOptions.find((s) => getEmbedId(s) === embedId);
   if (!song) return;
 
   // Show loading state
@@ -136,7 +152,11 @@ window.loadAndPlayEmbed = function(embedId, playButton) {
 // Listen for embed events to sync playback (mainly for Spotify)
 window.addEventListener("message", function (event) {
   // Only handle Spotify sync since Deezer embeds are simpler
-  if (event.origin !== "https://open.spotify.com" || MUSIC_PROVIDER !== 'spotify') return;
+  if (
+    event.origin !== "https://open.spotify.com" ||
+    MUSIC_PROVIDER !== "spotify"
+  )
+    return;
 
   const data = event.data;
   if (data.type === "playback_update") {
@@ -152,7 +172,7 @@ window.addEventListener("message", function (event) {
 
 function pauseOtherEmbeds(currentlyPlayingId) {
   // Only needed for Spotify embeds - Deezer handles this better natively
-  if (MUSIC_PROVIDER !== 'spotify') return;
+  if (MUSIC_PROVIDER !== "spotify") return;
 
   activeEmbeds.forEach((embedFrame) => {
     const embedId = embedFrame.getAttribute("data-embed-id");
@@ -235,15 +255,15 @@ function renderRound() {
 
   if (phaseInfo) {
     switch (phaseInfo.type) {
-      case 'discovery':
+      case "discovery":
         progressClass = "phase-discovery";
         phaseMessageClass = "phase-discovery";
         break;
-      case 'elimination':
+      case "elimination":
         progressClass = "phase-elimination";
         phaseMessageClass = "phase-elimination";
         break;
-      case 'head-to-head':
+      case "head-to-head":
         progressClass = "phase-head-to-head";
         phaseMessageClass = "phase-head-to-head";
         break;
@@ -265,7 +285,7 @@ function renderRound() {
         <div class="song-option fade-in-${index + 1}">
           <div class="embed-and-button">
             <div class="embed-container" data-embed-id="${getEmbedId(song)}" data-provider="${MUSIC_PROVIDER}">
-              <div class="play-placeholder" ${song.albumCover ? `style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('${song.albumCover}'); background-size: cover; background-position: center;"` : ''}>
+              <div class="play-placeholder" ${song.albumCover ? `style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('${song.albumCover}'); background-size: cover; background-position: center;"` : ""}>
                 <div class="song-info">
                   <h3>${escapeHtml(song.title)}</h3>
                   <p>${escapeHtml(song.album)}</p>
@@ -295,9 +315,16 @@ function renderRound() {
 
   // Clean up animation classes after animations complete
   setTimeout(() => {
-    const songOptions = document.querySelectorAll('.song-option');
-    songOptions.forEach(option => {
-      option.classList.remove('fade-in-1', 'fade-in-2', 'fade-in-3', 'fade-out-1', 'fade-out-2', 'fade-out-3');
+    const songOptions = document.querySelectorAll(".song-option");
+    songOptions.forEach((option) => {
+      option.classList.remove(
+        "fade-in-1",
+        "fade-in-2",
+        "fade-in-3",
+        "fade-out-1",
+        "fade-out-2",
+        "fade-out-3",
+      );
     });
   }, 600); // Very quick cleanup - after all fade-in animations complete
 
@@ -427,7 +454,7 @@ window.shareRanking = async function () {
               justify-content: space-between;
               align-items: center;
               padding: 0.75rem 0;
-              ${index < 9 ? 'border-bottom: 1px solid rgba(255, 255, 255, 0.2);' : ''}
+              ${index < 9 ? "border-bottom: 1px solid rgba(255, 255, 255, 0.2);" : ""}
             ">
               <span style="
                 font-weight: bold;
@@ -468,7 +495,7 @@ window.shareRanking = async function () {
     document.body.appendChild(shareContainer);
 
     // Wait a moment for the DOM to render
-    await new Promise(resolve => setTimeout(resolve, 100));
+    await new Promise((resolve) => setTimeout(resolve, 100));
 
     // Calculate proper height based on content
     const actualHeight = shareContainer.scrollHeight;
@@ -548,7 +575,8 @@ window.shareRanking = async function () {
   } catch (error) {
     console.error("Error generating share image:", error);
     alert(
-      "Sorry, there was an error generating the share image. Please try again.\n\nError: " + error.message,
+      "Sorry, there was an error generating the share image. Please try again.\n\nError: " +
+        error.message,
     );
   } finally {
     shareButton.disabled = false;
@@ -588,16 +616,16 @@ window.selectSong = function (songId) {
   console.log(`🎵 Song selected: ${songId}`);
 
   // Trigger staggered fade out animation
-  const songOptions = document.querySelectorAll('.song-option');
+  const songOptions = document.querySelectorAll(".song-option");
   songOptions.forEach((option, index) => {
     option.classList.add(`fade-out-${index + 1}`);
   });
 
   // Disable all selection buttons during transition
-  const selectButtons = document.querySelectorAll('.select-button');
-  selectButtons.forEach(button => {
+  const selectButtons = document.querySelectorAll(".select-button");
+  selectButtons.forEach((button) => {
     button.disabled = true;
-    button.style.pointerEvents = 'none';
+    button.style.pointerEvents = "none";
   });
 
   // Wait for fade out animation to complete, then update
