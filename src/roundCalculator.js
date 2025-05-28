@@ -9,23 +9,22 @@
  * @returns {number} Number of rounds (in 5-round increments)
  */
 export function calculateHeadToHeadRounds(songCount) {
-  // Much more reasonable approach: each song should appear 2-3 times in head-to-head
-  const targetAppearancesPerSong = Math.min(3, Math.max(2, Math.ceil(songCount / 8)));
+  // For pure head-to-head precision: aim for 100% pairwise coverage
+  const totalPairs = (songCount * (songCount - 1)) / 2;
 
-  // Total appearances needed
-  const totalAppearances = songCount * targetAppearancesPerSong;
+  // Each round covers 3 pairs: (A vs B), (A vs C), (B vs C)
+  const roundsForFullCoverage = Math.ceil(totalPairs / 3);
 
-  // Each round has 3 song appearances
-  const baseRounds = Math.ceil(totalAppearances / 3);
+  // Also ensure each song appears at least 4 times for reliable data
+  const minAppearancesPerSong = 4;
+  const totalAppearances = songCount * minAppearancesPerSong;
+  const roundsForAppearances = Math.ceil(totalAppearances / 3);
 
-  // Apply reasonable bounds
-  const minRounds = Math.max(5, Math.ceil(songCount * 0.5)); // At least 50% of song count
-  const maxRounds = Math.ceil(songCount * 1.5); // No more than 1.5x song count
-
-  const boundedRounds = Math.max(minRounds, Math.min(maxRounds, baseRounds));
+  // Take the higher requirement
+  const baseRounds = Math.max(roundsForFullCoverage, roundsForAppearances);
 
   // Round to nearest 5
-  return Math.ceil(boundedRounds / 5) * 5;
+  return Math.ceil(baseRounds / 5) * 5;
 }
 
 /**
@@ -43,8 +42,8 @@ export function calculateHybridSystem(totalSongs) {
   // Survivors after Phase 1 (top ~60% since elimination is more lenient now)
   const phase1Survivors = Math.ceil(totalSongs * 0.6);
 
-  // Phase 2: More elimination (get to final 15-25 songs)
-  const finalSongs = Math.min(25, Math.max(15, Math.ceil(totalSongs * 0.3)));
+  // Phase 2: Elimination to exactly 15 finalists for optimal head-to-head coverage
+  const finalSongs = 15; // Fixed count for 100% pairwise coverage in reasonable rounds
   const phase2Rounds = Math.ceil((phase1Survivors * 1.2) / 3);
   const phase2RoundsRounded = Math.ceil(phase2Rounds / 5) * 5;
 

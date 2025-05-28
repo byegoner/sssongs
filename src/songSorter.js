@@ -71,12 +71,17 @@ export class SongSorter {
     console.log(`🎯 Hybrid System Configuration:`, this.systemConfig);
     console.log(`📊 Total rounds needed: ${this.totalRounds}`);
 
-    // Initialize songs with score tracking instead of Elo
+    // Initialize songs with score tracking and head-to-head data
     this.songs = availableSongs.map((song) => ({
       ...song,
-      score: 0, // Changed from rating to score
+      score: 0, // Phase 1-2 accumulation score
       appearances: 0,
-      eliminated: false
+      eliminated: false,
+      // Phase 3 head-to-head tracking (reset when entering Phase 3)
+      h2hScore: 0, // Pure head-to-head wins in Phase 3
+      h2hWins: 0,
+      h2hLosses: 0,
+      h2hMatches: 0
     }));
 
     this.currentRound = 0;
@@ -437,7 +442,7 @@ export class SongSorter {
 
   eliminateSongs() {
     const phaseInfo = this.getCurrentPhaseInfo();
-
+  
     if (phaseInfo.phase === 1 && phaseInfo.phaseRound === phaseInfo.maxPhaseRounds) {
       // End of Phase 1: eliminate songs with very low scores (more lenient threshold)
       // In 35 rounds, a song should have at least a few chances to win
@@ -447,24 +452,36 @@ export class SongSorter {
           song.eliminated = true;
         }
       });
-
+  
       const remaining = this.songs.filter(song => !song.eliminated).length;
       console.log(`🎯 Phase 1 complete: ${remaining} songs survived elimination (score > ${threshold})`);
-
+  
     } else if (phaseInfo.phase === 2 && phaseInfo.phaseRound === phaseInfo.maxPhaseRounds) {
       // End of Phase 2: eliminate to get final head-to-head count
       const survivors = this.songs.filter(song => !song.eliminated);
       const sortedSurvivors = survivors.sort((a, b) => b.score - a.score);
       const keepCount = this.systemConfig.phase2.survivors;
-
+  
       sortedSurvivors.forEach((song, index) => {
         if (index >= keepCount) {
           song.eliminated = true;
         }
       });
-
+  
       const remaining = this.songs.filter(song => !song.eliminated).length;
       console.log(`🎯 Phase 2 complete: Top ${remaining} songs advance to head-to-head`);
+  
+      // RESET HEAD-TO-HEAD SCORES for pure Phase 3 ranking
+      this.songs.forEach(song => {
+        if (!song.eliminated) {
+          song.h2hScore = 0;
+          song.h2hWins = 0;
+          song.h2hLosses = 0;
+          song.h2hMatches = 0;
+        }
+      });
+  
+      console.log(`🔄 Head-to-head scores reset for pure Phase 3 ranking`);
     }
   }
 
@@ -508,33 +525,55 @@ export class SongSorter {
 
   selectWinner(winnerId) {
     if (this.currentRound >= this.totalRounds) return;
-
+  
     // Use the stored options from getCurrentRound instead of calling selectThreeSongs again
     const options = this.currentRoundOptions;
     if (!options) {
       console.error("No current round options available");
       return;
     }
-
+  
     const winner = options.find((song) => song.id === winnerId);
-
+  
     if (!winner) {
       console.error(`Winner not found: ${winnerId}`);
       return;
     }
-
-    // Score accumulation: winner gets +1 point
-    winner.score += 1;
-
+  
+    const phaseInfo = this.getCurrentPhaseInfo();
+  
+    if (phaseInfo.phase === 3) {
+      // Phase 3: Track pure head-to-head wins/losses
+      const losers = options.filter(song => song.id !== winnerId);
+  
+      // Winner gets +1 h2h win vs each loser
+      winner.h2hWins += losers.length;
+      winner.h2hScore += 1; // Simple +1 for winning the round
+  
+      // Each loser gets +1 h2h loss vs winner
+      losers.forEach(loser => {
+        loser.h2hLosses += 1;
+      });
+  
+      // All participants get match count incremented
+      options.forEach(song => {
+        song.h2hMatches += 1;
+      });
+  
+    } else {
+      // Phase 1-2: Score accumulation as before
+      winner.score += 1;
+    }
+  
     this.history.push({
       round: this.currentRound + 1,
       options: options.map((s) => s.id),
       winner: winnerId,
       timestamp: Date.now(),
     });
-
+  
     this.currentRound++;
-
+  
     // Check for elimination after specific phases
     this.eliminateSongs();
   }
@@ -577,47 +616,28 @@ export class SongSorter {
 
   getHeadToHeadRankings() {
     const activeSongs = this.songs.filter(song => !song.eliminated);
-
-    // Build head-to-head matrix
-    const h2hMatrix = {};
-    activeSongs.forEach(song => {
-      h2hMatrix[song.id] = { wins: 0, losses: 0, opponents: new Set() };
-    });
-
-    // Analyze history for head-to-head records
-    this.history.forEach(round => {
-      const winner = round.winner;
-      const losers = round.options.filter(id => id !== winner);
-
-      if (h2hMatrix[winner]) {
-        losers.forEach(loserId => {
-          if (h2hMatrix[loserId]) {
-            h2hMatrix[winner].wins++;
-            h2hMatrix[winner].opponents.add(loserId);
-            h2hMatrix[loserId].losses++;
-            h2hMatrix[loserId].opponents.add(winner);
-          }
-        });
-      }
-    });
-
-    // Rank by win percentage against other finalists
+  
+    // Use the tracked head-to-head data from Phase 3
     return activeSongs
       .map(song => ({
         ...song,
-        h2hWins: h2hMatrix[song.id].wins,
-        h2hLosses: h2hMatrix[song.id].losses,
-        h2hOpponents: h2hMatrix[song.id].opponents.size,
-        winPercentage: h2hMatrix[song.id].wins + h2hMatrix[song.id].losses > 0
-          ? h2hMatrix[song.id].wins / (h2hMatrix[song.id].wins + h2hMatrix[song.id].losses)
-          : 0
+        // Calculate win percentage from tracked h2h data
+        winPercentage: song.h2hWins + song.h2hLosses > 0
+          ? song.h2hWins / (song.h2hWins + song.h2hLosses)
+          : 0,
+        // Expose h2h stats for potential UI display
+        h2hTotalMatches: song.h2hMatches
       }))
       .sort((a, b) => {
-        // Primary: win percentage in head-to-head
+        // Primary: win percentage in head-to-head (pure Phase 3 performance)
         if (Math.abs(a.winPercentage - b.winPercentage) > 0.01) {
           return b.winPercentage - a.winPercentage;
         }
-        // Secondary: total score from earlier phases
+        // Secondary: number of matches played (more data = more reliable)
+        if (a.h2hMatches !== b.h2hMatches) {
+          return b.h2hMatches - a.h2hMatches;
+        }
+        // Tertiary: Phase 1-2 performance (only for very close cases)
         return b.score - a.score;
       })
       .map((song, index) => ({
