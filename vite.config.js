@@ -3,6 +3,10 @@ import basicSsl from "@vitejs/plugin-basic-ssl";
 
 export default defineConfig({
   plugins: [basicSsl()],
+  esbuild: {
+    jsx: 'automatic',
+    jsxImportSource: 'preact'
+  },
 
   base: "/songs/",
   build: {
